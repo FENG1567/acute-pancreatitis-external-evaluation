@@ -1,0 +1,56 @@
+canonical_id,definition,domain,standard_unit,allowed_range,eligible_for_primary_model,MIMIC-IV+Note_confirmed_sources,MIMIC-IV+Note_eligible,eICU_confirmed_sources,eICU_eligible,NWICU_confirmed_sources,NWICU_eligible,SICdb_confirmed_sources,SICdb_eligible,HiRID_confirmed_sources,HiRID_eligible
+canon_patient_id,De-identified patient identifier,anchor,,None..None,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_icu_stay_id,De-identified ICU stay identifier,anchor,,None..None,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_hospital_admit_id,De-identified hospital admission identifier,anchor,,None..None,True,yes,yes,yes,yes,yes,yes,no,no,no,no
+canon_icu_admit_time,ICU admission time (landmark t0),time,,None..None,True,yes,yes,yes,yes,yes,yes,no,no,yes,no
+canon_icu_discharge_time,ICU discharge time,time,,None..None,True,yes,yes,yes,yes,yes,yes,no,no,no,no
+canon_hospital_admit_time,Hospital admission time,time,,None..None,True,yes,yes,yes,yes,yes,yes,no,no,no,no
+canon_hospital_discharge_time,Hospital discharge time,time,,None..None,True,yes,yes,yes,yes,yes,yes,no,no,no,no
+canon_age,Age at admission (years),demographic,year,18..120,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_sex,Sex (M/F/U per source coding),demographic,,None..None,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_ap_diagnosis,"Acute pancreatitis diagnosis indicator/code (ICD9 577.0*, ICD10 K85*)",cohort,,None..None,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_hospital_mortality,In-hospital mortality (primary outcome),outcome,,0..1,True,yes,yes,yes,yes,no,no,no,no,no,no
+canon_icu_mortality,ICU mortality,outcome,,0..1,True,no,no,yes,yes,no,no,no,no,no,no
+canon_death_time,Time of death,outcome,,None..None,True,yes,yes,no,no,no,no,no,no,no,no
+canon_heart_rate,Heart rate,vital,bpm,10..300,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_sbp,Systolic blood pressure,vital,mmHg,30..300,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_dbp,Diastolic blood pressure,vital,mmHg,10..250,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_map,Mean arterial pressure,vital,mmHg,20..250,True,yes,yes,yes,yes,no,no,yes,yes,yes,no
+canon_respiratory_rate,Respiratory rate,vital,bpm,2..100,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_spo2,Peripheral oxygen saturation,vital,%,30..100,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_temperature,Body temperature,vital,C,26..44,True,yes,yes,no,no,yes,yes,yes,yes,yes,no
+canon_wbc,White blood cell count,lab,K/uL,0..500,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_platelet,Platelet count,lab,K/uL,0..2000,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_hematocrit,Hematocrit,lab,%,5..75,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_hemoglobin,Hemoglobin,lab,g/dL,1..25,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_bun,Blood urea nitrogen,lab,mg/dL,0..300,True,yes,yes,yes,yes,yes,yes,no,no,no,no
+canon_creatinine,Creatinine,lab,mg/dL,0..30,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_sodium,Sodium,lab,mmol/L,80..200,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_potassium,Potassium,lab,mmol/L,1..10,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_calcium,Total calcium,lab,mg/dL,2..25,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_glucose,Glucose,lab,mg/dL,10..1500,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_bilirubin,Total bilirubin,lab,mg/dL,0..80,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_albumin,Albumin,lab,g/dL,0..10,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_ast,Aspartate aminotransferase,lab,IU/L,0..20000,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_alt,Alanine aminotransferase,lab,IU/L,0..20000,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_alp,Alkaline phosphatase,lab,IU/L,0..10000,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_lactate,Lactate,lab,mmol/L,0..50,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_lipase,Lipase,lab,IU/L,0..20000,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_amylase,Amylase,lab,IU/L,0..20000,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_inr,International normalized ratio,lab,ratio,0.5..20,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_pt,Prothrombin time,lab,s,5..200,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_ptt,Partial thromboplastin time,lab,s,10..400,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_pao2,Partial pressure of oxygen (arterial preferred),lab,mmHg,10..800,True,yes,yes,yes,yes,no,no,yes,yes,no,no
+canon_fio2,Fraction of inspired oxygen,vital,fraction,0.21..1.0,True,no,no,yes,yes,no,no,yes,yes,no,no
+canon_ph,Arterial pH,lab,pH,6.5..8.0,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_gcs_eye,GCS eye opening,severity,,1..4,True,yes,yes,no,no,no,no,no,no,no,no
+canon_gcs_verbal,GCS verbal response,severity,,1..5,True,yes,yes,no,no,no,no,no,no,no,no
+canon_gcs_motor,GCS motor response,severity,,1..6,True,yes,yes,no,no,no,no,no,no,no,no
+canon_gcs_total,GCS total score,severity,,3..15,True,no,no,no,no,no,no,no,no,yes,no
+canon_urine_output,Urine output volume,support,mL,0..10000,True,yes,yes,yes,yes,no,no,yes,yes,no,no
+canon_ventilation_status,Mechanical ventilation status (none/O2/NIV/invasive),support,,0..3,True,yes,yes,yes,yes,yes,yes,no,no,no,no
+canon_vasopressor_admin,Vasopressor administration (norepi/epi/dopa/vaso/phenyl/dobutamine/milrinone),support,,0..1,True,yes,yes,yes,yes,no,no,no,no,no,no
+canon_crrt_status,Continuous renal replacement therapy status,support,,0..1,True,yes,yes,no,no,no,no,no,no,no,no
+canon_measurement_time,Generic event/measurement timestamp for a record,time,,None..None,True,yes,yes,yes,yes,yes,yes,yes,yes,yes,no
+canon_lab_result,Numeric lab result; row-level canonical resolved via item/lab dictionary,lab,per-item,None..None,True,yes,yes,yes,yes,yes,yes,yes,yes,no,no
+canon_vital_result,Numeric vital/physiology result; row-level canonical resolved via item dictionary,vital,per-item,None..None,True,yes,yes,no,no,yes,yes,yes,yes,yes,no

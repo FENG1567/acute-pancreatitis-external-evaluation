@@ -1,0 +1,2 @@
+result_id,metric_name,database,cohort,model,estimate,ci_low,ci_high,ci_kind,denominator,events,result_role,interpretation,source_locator
+R8_CLINICAL_SCORE_COMPUTABILITY,clinical_score_computability,cross_database,audit boundary,not_applicable,,,,NE,,,not_estimable,No complete equivalent SOFA/BISAP comparison is estimable from this aggregate release; retain non-computability boundary.,CLINICAL_SCORE_COMPUTABILITY

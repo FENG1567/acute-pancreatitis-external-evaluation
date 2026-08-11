@@ -1,0 +1,3 @@
+label_version=3A.0 (spec unchanged)
+cohort_build_version=3B.0
+random_seed=20260808

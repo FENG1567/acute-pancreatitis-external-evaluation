@@ -1,0 +1,5 @@
+database,table,field,leak_risk,note
+eICU,patient,hospitaladmittime24/hospitaladmitoffset,none,offset from ICU admission; time24 is clock time; combined = absolute datetime
+eICU,lab,labresultrevisedoffset,medium,revision/recorded time; never use as event time
+MIMIC-IV+Note,labevents,storetime,high,recorded/charting time; use charttime (specimen collection) only
+MIMIC-IV+Note,chartevents,storetime,high,recorded time; use charttime only

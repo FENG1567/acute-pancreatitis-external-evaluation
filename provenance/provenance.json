@@ -1,0 +1,48 @@
+{
+  "project": "External performance and measurement-process shift in acute-pancreatitis mortality prediction across ICU databases",
+  "stage": 7,
+  "provenance_status": "local_audit_complete_remote_clean_rerun_pending",
+  "source_of_truth": {
+    "metrics": "final/source_of_truth_metrics.csv",
+    "traceability": "final/result_traceability.csv",
+    "claims": "final/claim_evidence_matrix.csv",
+    "source_files": "final/source_file_registry.csv"
+  },
+  "immutable_inputs": {
+    "cohort_spec_sha256": "56ffa224b26112c36f79b5e686817d9c607f3f74936ca7d0dd0a3de08baf734b",
+    "external_prediction_sha256": "95317b4abb2f5ae33411284077fa4bdb460ccedc92146464cc8c94a4d3cd2f6e",
+    "stage6_git_commit": "b0aa91c0ed93c78b7ea6561dcefd94cee413ac06"
+  },
+  "primary_path": {
+    "development": "MIMIC-IV",
+    "external_evaluation": "eICU",
+    "primary_models": ["logistic_A", "logistic_B"],
+    "exploratory_models": ["logistic_C", "tree_sensitivities", "paper-guided reconstruction"]
+  },
+  "database_roles": {
+    "NWICU": "computability_and_measurement_process_only",
+    "SICdb": "exploratory_only",
+    "HiRID": "general_ICU_observation_reference_only"
+  },
+  "superseded_results": [
+    "Stage-6 OLS calibration metrics",
+    "Stage-6B intercept recalibration",
+    "Stage-6B case-mix/ESS outputs",
+    "Stage-6B value-alignment performance claims",
+    "Stage-6B target-pattern masking effect/fraction",
+    "Stage-6B domain occlusion",
+    "Stage-6B hospital-level regression",
+    "Stage-5/6 uncorrected SOFA/BISAP computability claims",
+    "Stage-5 pooled logistic OOF metrics and external-minus-internal degradation estimates"
+  ],
+  "privacy": {
+    "raw_data_in_release": false,
+    "patient_level_derived_data_in_public_release": false,
+    "credentials_in_release": false,
+    "public_deposit": "pending"
+  },
+  "guidelines": {
+    "TRIPOD+AI": "BMJ 2024;385:e078378",
+    "PROBAST+AI": "BMJ 2025;388:e082505"
+  }
+}

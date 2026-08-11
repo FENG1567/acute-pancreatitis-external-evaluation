@@ -1,0 +1,5 @@
+database,sensitive,primary,strict,biliary,acute_on_chronic,diagnosis_time_missing,diagnosis_after_prediction,chronic_mixed
+MIMIC-IV,1280,434,434,21,197,1280,not executable,no (chronic-only excluded by construction)
+eICU,1385,1264,1264,0,64,1385,not executable,no (chronic-only excluded by construction)
+NWICU,225,77,77,0,18,225,not executable,no (chronic-only excluded by construction)
+SICdb,97,97,97,31,0,97,not executable,no (chronic-only excluded by construction)

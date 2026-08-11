@@ -1,0 +1,142 @@
+# Unit conversion rules (frozen, version 1.0)
+# raw_value and raw_unit are preserved; converted_value carries conversion_rule_id.
+
+UCR-001:
+  canonical: "canon_creatinine"
+  from_unit: "umol/L"
+  to_unit: "mg/dL"
+  formula: "mg/dL = umol/L / 88.4"
+  reverse: "umol/L = mg/dL * 88.4"
+  source: "Standard clinical chemistry; MIMIC-IV d_labitems units (mg/dL), SICdb d_references (umol/L)"
+  allowed: [0, 30]
+  version: "1.0"
+
+UCR-002:
+  canonical: "canon_glucose"
+  from_unit: "mmol/L"
+  to_unit: "mg/dL"
+  formula: "mg/dL = mmol/L * 18.016"
+  reverse: "mmol/L = mg/dL / 18.016"
+  source: "Standard clinical chemistry (glucose molar mass 180.16 g/mol)"
+  allowed: [10, 1500]
+  version: "1.0"
+
+UCR-003:
+  canonical: "canon_calcium"
+  from_unit: "mmol/L"
+  to_unit: "mg/dL"
+  formula: "mg/dL = mmol/L * 4.008"
+  reverse: "mmol/L = mg/dL / 4.008"
+  source: "Standard clinical chemistry (Ca atomic weight 40.08)"
+  allowed: [2, 25]
+  version: "1.0"
+
+UCR-004:
+  canonical: "canon_bilirubin"
+  from_unit: "umol/L"
+  to_unit: "mg/dL"
+  formula: "mg/dL = umol/L / 17.1"
+  reverse: "umol/L = mg/dL * 17.1"
+  source: "Standard clinical chemistry (bilirubin MW 584.7)"
+  allowed: [0, 80]
+  version: "1.0"
+
+UCR-005:
+  canonical: "canon_temperature"
+  from_unit: "F"
+  to_unit: "C"
+  formula: "C = (F - 32) * 5/9"
+  reverse: "F = C * 9/5 + 32"
+  source: "Standard temperature conversion"
+  allowed: [26, 44]
+  version: "1.0"
+
+UCR-006:
+  canonical: "canon_temperature"
+  from_unit: "C"
+  to_unit: "F"
+  formula: "F = C * 9/5 + 32"
+  reverse: "C = (F - 32) * 5/9"
+  source: "Standard temperature conversion"
+  allowed: [78.8, 111.2]
+  version: "1.0"
+
+UCR-007:
+  canonical: "canon_bun"
+  from_unit: "mmol/L"
+  to_unit: "mg/dL"
+  formula: "mg/dL = mmol/L * 2.801"
+  reverse: "mmol/L = mg/dL / 2.801"
+  source: "Standard clinical chemistry (urea nitrogen MW 14.007, BUN)"
+  allowed: [0, 300]
+  version: "1.0"
+
+UCR-008:
+  canonical: "canon_lactate"
+  from_unit: "mg/dL"
+  to_unit: "mmol/L"
+  formula: "mmol/L = mg/dL / 9.008"
+  reverse: "mg/dL = mmol/L * 9.008"
+  source: "Standard clinical chemistry (lactate MW 90.08)"
+  allowed: [0, 50]
+  version: "1.0"
+
+UCR-009:
+  canonical: "canon_wbc"
+  from_unit: "cells/uL"
+  to_unit: "K/uL"
+  formula: "K/uL = cells/uL / 1000"
+  reverse: "cells/uL = K/uL * 1000"
+  source: "Standard unit scale conversion"
+  allowed: [0, 500]
+  version: "1.0"
+
+UCR-010:
+  canonical: "canon_platelet"
+  from_unit: "cells/uL"
+  to_unit: "K/uL"
+  formula: "K/uL = cells/uL / 1000"
+  reverse: "cells/uL = K/uL * 1000"
+  source: "Standard unit scale conversion"
+  allowed: [0, 2000]
+  version: "1.0"
+
+UCR-011:
+  canonical: "canon_urine_output"
+  from_unit: "L"
+  to_unit: "mL"
+  formula: "mL = L * 1000"
+  reverse: "L = mL / 1000"
+  source: "Standard volume conversion"
+  allowed: [0, 10000]
+  version: "1.0"
+
+UCR-012:
+  canonical: "canon_bun"
+  from_unit: "urea mg/dL"
+  to_unit: "BUN mg/dL"
+  formula: "BUN mg/dL = urea mg/dL * 0.467"
+  reverse: "urea mg/dL = BUN mg/dL / 0.467"
+  source: "BUN = urea nitrogen; urea (mol wt 60.06) -> N (14.007): 28.014/60.06 = 0.4669 (SICdb Harnstoff (ZL) mg/dL)"
+  allowed: [0, 300]
+  version: "1.0"
+
+UCR-013:
+  canonical: "canon_wbc"
+  from_unit: "g/L"
+  to_unit: "K/uL"
+  formula: "K/uL = g/L (1 g/L = 1e9/L = 1e3/uL = 1 K/uL)"
+  reverse: "identity"
+  source: "SICdb Leukocyten (ZL) g/L is 1:1 with K/uL (10^9/L)"
+  allowed: [0, 500]
+  version: "1.0"
+
+UCR-014:
+  canonical: "canon_platelet"
+  from_unit: "g/L"
+  to_unit: "K/uL"
+  formula: "K/uL = g/L (1 g/L = 1e9/L = 1 K/uL)"
+  reverse: "identity"
+  source: "SICdb Thrombocyten (ZL) g/L is 1:1 with K/uL"
+  allowed: [0, 2000]
+  version: "1.0"

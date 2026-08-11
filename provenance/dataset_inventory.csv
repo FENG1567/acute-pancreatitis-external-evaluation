@@ -1,0 +1,9 @@
+dataset,project_role,source_type,version_record,access_class,redistribution,patient_level_release,provenance_reference
+MIMIC-IV,development and internal validation,routine-care ICU database,"MIMIC-IV 3.1; exact file hashes in Stage-1 manifest",credentialed controlled access,prohibited_without_custodian_authorisation,no,"manifests/raw_file_inventory.csv"
+MIMIC-IV-Note,clinical-text evidence for selected anchors,routine-care clinical notes,"MIMIC-IV-Note 2.2; exact file hashes in Stage-1 manifest",credentialed controlled access,prohibited_without_custodian_authorisation,no,"manifests/raw_file_inventory.csv"
+eICU,primary locked external evaluation,multicentre routine-care ICU database,"exact captured files and hashes in Stage-1/2 manifests",credentialed controlled access,prohibited_without_custodian_authorisation,no,"manifests/raw_file_inventory.csv"
+NWICU,computability and measurement-process exploration,routine-care ICU database,"exact captured archive and hash in Stage-1 manifest",source-custodian terms apply,not_assumed,no,"manifests/raw_file_inventory.csv"
+SICdb,exploratory measurement/outcome analysis,routine-care ICU database,"exact captured archive and hash in Stage-1 manifest",source-custodian terms apply,not_assumed,no,"manifests/raw_file_inventory.csv"
+HiRID,general ICU observation-process reference,routine-care ICU database,"exact captured archive and hash in Stage-1 manifest",source-custodian terms apply,not_assumed,no,"manifests/raw_file_inventory.csv"
+Stage7_aggregate_metrics,submission source of truth,derived aggregate results,"Stage-7 generated registry",project-derived,pending_licence_review,aggregate_only,"final/source_of_truth_metrics.csv"
+Stage7_figure_source_data,publication figure support,derived aggregate results,"Stage-7 generated",project-derived,pending_privacy_and_licence_review,aggregate_only,"source_data/"

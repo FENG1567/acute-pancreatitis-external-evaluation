@@ -1,0 +1,9 @@
+claim,verdict,permitted_wording,prohibited_wording,evidence
+Locked eICU discrimination,SUPPORTED,"retained useful ranking performance with wide uncertainty","clinically validated or deployment-ready",Table 2; Figure 3
+Absolute-risk transport,SUPPORTED,"external calibration was poor","transport failure proves unusability in all settings",Table 2; Figure 4
+Model A versus Model B,NO_STABLE_ADVANTAGE,"no stable advantage was detected; equivalence was not established","Model B is superior or equivalent",Table 5; Figure 5
+Measurement-process differences,SUPPORTED_DESCRIPTIVELY,"measurement presence and rate differed descriptively","hospital policy caused model failure",Figure 2
+Formal degradation magnitude,NOT_PREBLINDED,"post-audit internal-external contrasts are exploratory","formal degradation was quantified",Table S4
+Stage6B mechanism decomposition,INVALID_FOR_CLAIM,"historical implementation audit only","fraction explained or causal mechanism",Table 6
+Clinical scores,COMPUTABILITY_ONLY,"exact SOFA/BISAP comparison was not estimable","superiority to SOFA or BISAP",Table S5
+Deployment,UNSUPPORTED,"not deployment-ready","ready for clinical use",Manuscript limitations

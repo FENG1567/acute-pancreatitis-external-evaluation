@@ -1,0 +1,7 @@
+# Copy to an untracked local file and replace placeholders only after obtaining
+# access from each database custodian. Never commit credentials or raw records.
+project_root: /path/to/project
+raw_data_root: /path/to/credentialed/raw_data
+output_root: /path/to/project
+runtime_credential_source: environment_or_interactive_prompt
+

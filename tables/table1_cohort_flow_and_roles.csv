@@ -1,0 +1,8 @@
+database,cohort_or_role,total_n,landmark_n,events,result_role,interpretation_limit,result_ids
+MIMIC-IV,aligned primary internal development,434,347,31,post_audit_corrected_internal,Corrected keyed OOF; not pre-blinded external validation.,R8_STAGE3B_MIMIC_IV_PRIMARY_DEFINITION;R8_MIMIC_KEYED_OOF_A_AUROC
+eICU,aligned diagnosis-priority-only primary locked,470,359,21,primary_locked_external,Primary locked external evaluation after 24-hour landmark.,R8_PHENOTYPE_ALIGNED_AP_DIAGNOSIS_PRIORITY_ONLY
+eICU,broad database-specific primary,1264,1007,87,post_audit_sensitivity,Separate phenotype account; not primary locked evaluation.,R8_PHENOTYPE_BROAD_DATABASE_SPECIFIC_PRIMARY
+eICU,sensitive any-AP,1385,1106,96,post_audit_sensitivity,Sensitivity only; does not replace primary.,R8_PHENOTYPE_SENSITIVE_ANY_AP
+NWICU,measurement/process computability only,225,181,NE,role_constraint,No formal AUROC/AUPRC/Brier/calibration/DCA claim.,R8_STAGE3B_NWICU_ROLE_COHORT
+SICdb,exploratory only,97,79,17,role_constraint,17 events below formal-validation threshold; not pooled.,R8_STAGE3B_SICDB_ROLE_COHORT
+HiRID,general-ICU process reference only,33905,NE,NE,role_constraint,No AP cohort/performance conclusion.,R8_STAGE3B_HIRID_ROLE_COHORT

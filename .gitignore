@@ -1,0 +1,20 @@
+# Local protected data and derived sensitive outputs
+data/
+raw_data/
+controlled_artifacts/
+*.parquet
+*.joblib
+*.pyc
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+*.tmp
+~$*
+
+# Never commit credentials or local machine paths
+*.key
+*.pem
+secrets*

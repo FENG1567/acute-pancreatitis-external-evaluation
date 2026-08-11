@@ -1,0 +1,15 @@
+conversion_rule_id,canonical,from_unit,to_unit,samples_available,samples_tested,roundtrip_pass,note
+UCR-001,canon_creatinine,umol/L,mg/dL,25,25,PASS,synthetic roundtrip on 25 values; observed data units: ['mg/dL']
+UCR-002,canon_glucose,mmol/L,mg/dL,25,25,PASS,synthetic roundtrip on 25 values; observed data units: ['mg/dL']
+UCR-003,canon_calcium,mmol/L,mg/dL,25,25,PASS,synthetic roundtrip on 25 values; observed data units: ['mg/dL']
+UCR-004,canon_bilirubin,umol/L,mg/dL,25,25,PASS,synthetic roundtrip on 25 values; observed data units: ['mg/dL']
+UCR-005,canon_temperature,F,C,25,25,PASS,synthetic roundtrip on 25 values; observed data units: []
+UCR-006,canon_temperature,C,F,25,25,PASS,synthetic roundtrip on 25 values; observed data units: []
+UCR-007,canon_bun,mmol/L,mg/dL,25,25,PASS,synthetic roundtrip on 25 values; observed data units: ['mg/dL']
+UCR-008,canon_lactate,mg/dL,mmol/L,25,25,PASS,"synthetic roundtrip on 25 values; observed data units: ['mMol/L', 'mmol/L']"
+UCR-009,canon_wbc,cells/uL,K/uL,25,25,PASS,"synthetic roundtrip on 25 values; observed data units: ['10ˆ3/µL', 'K/UL', 'K/uL', 'K/µL', 'k/cu mm', 'k/mcL']"
+UCR-010,canon_platelet,cells/uL,K/uL,25,25,PASS,"synthetic roundtrip on 25 values; observed data units: ['10ˆ3/µL', 'K/UL', 'K/uL', 'K/µL', 'NULL', 'k/cu mm', 'k/mcL']"
+UCR-011,canon_urine_output,L,mL,25,25,PASS,synthetic roundtrip on 25 values; observed data units: []
+UCR-012,canon_bun,urea mg/dL,BUN mg/dL,25,25,PASS,synthetic roundtrip on 25 values; observed data units: ['mg/dL']
+UCR-013,canon_wbc,g/L,K/uL,25,25,PASS,"synthetic roundtrip on 25 values; observed data units: ['10ˆ3/µL', 'K/UL', 'K/uL', 'K/µL', 'k/cu mm', 'k/mcL']"
+UCR-014,canon_platelet,g/L,K/uL,25,25,PASS,"synthetic roundtrip on 25 values; observed data units: ['10ˆ3/µL', 'K/UL', 'K/uL', 'K/µL', 'NULL', 'k/cu mm', 'k/mcL']"

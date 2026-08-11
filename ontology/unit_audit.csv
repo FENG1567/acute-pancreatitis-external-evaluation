@@ -1,0 +1,88 @@
+database,canonical,source_field,raw_unit,records_seen,observed_unit,sampled_n,min,max,note
+MIMIC-IV+Note,canon_glucose,(sampled),mg/dL,111,,,,,unit multiplicity check
+NWICU,canon_glucose,(sampled),mg/dL,2,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_alt,(sampled),IU/L,51,,,,,unit multiplicity check
+NWICU,canon_alt,(sampled),units/L,1,,,,,unit multiplicity check
+NWICU,canon_alt,(sampled),IU/L,1,,,,,unit multiplicity check
+NWICU,canon_alt,(sampled),Unit/L,1,,,,,unit multiplicity check
+NWICU,canon_alt,(sampled),NULL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_albumin,(sampled),g/dL,51,,,,,unit multiplicity check
+NWICU,canon_albumin,(sampled),g/dL,1,,,,,unit multiplicity check
+NWICU,canon_albumin,(sampled),gm/dL,1,,,,,unit multiplicity check
+NWICU,canon_albumin,(sampled),NULL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_alp,(sampled),IU/L,51,,,,,unit multiplicity check
+NWICU,canon_alp,(sampled),units/L,1,,,,,unit multiplicity check
+NWICU,canon_alp,(sampled),Unit/L,1,,,,,unit multiplicity check
+NWICU,canon_alp,(sampled),IU/L,1,,,,,unit multiplicity check
+NWICU,canon_alp,(sampled),NULL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_ast,(sampled),IU/L,51,,,,,unit multiplicity check
+NWICU,canon_ast,(sampled),units/L,1,,,,,unit multiplicity check
+NWICU,canon_ast,(sampled),Unit/L,1,,,,,unit multiplicity check
+NWICU,canon_ast,(sampled),IU/L,1,,,,,unit multiplicity check
+NWICU,canon_ast,(sampled),NULL,1,,,,,unit multiplicity check
+NWICU,canon_ast,(sampled),U/L,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_bilirubin,(sampled),mg/dL,51,,,,,unit multiplicity check
+NWICU,canon_bilirubin,(sampled),mg/dL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_calcium,(sampled),mg/dL,51,,,,,unit multiplicity check
+NWICU,canon_calcium,(sampled),mg/dL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_creatinine,(sampled),mg/dL,60,,,,,unit multiplicity check
+NWICU,canon_creatinine,(sampled),mg/dL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_potassium,(sampled),mEq/L,60,,,,,unit multiplicity check
+NWICU,canon_potassium,(sampled),mmol/L,1,,,,,unit multiplicity check
+NWICU,canon_potassium,(sampled),mEq/L,1,,,,,unit multiplicity check
+NWICU,canon_potassium,(sampled),NULL,1,,,,,unit multiplicity check
+NWICU,canon_potassium,(sampled),mmoles/L,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_sodium,(sampled),mEq/L,60,,,,,unit multiplicity check
+NWICU,canon_sodium,(sampled),mmol/L,1,,,,,unit multiplicity check
+NWICU,canon_sodium,(sampled),mEq/L,1,,,,,unit multiplicity check
+NWICU,canon_sodium,(sampled),mmoles/L,1,,,,,unit multiplicity check
+NWICU,canon_sodium,(sampled),NULL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_bun,(sampled),mg/dL,60,,,,,unit multiplicity check
+NWICU,canon_bun,(sampled),mg/dL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_inr,(sampled),,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_pt,(sampled),sec,51,,,,,unit multiplicity check
+NWICU,canon_pt,(sampled),seconds,1,,,,,unit multiplicity check
+NWICU,canon_pt,(sampled),Second(s),1,,,,,unit multiplicity check
+NWICU,canon_pt,(sampled),NULL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_hematocrit,(sampled),%,60,,,,,unit multiplicity check
+NWICU,canon_hematocrit,(sampled),%,1,,,,,unit multiplicity check
+NWICU,canon_hematocrit,(sampled),percent,1,,,,,unit multiplicity check
+NWICU,canon_hematocrit,(sampled),NULL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_hemoglobin,(sampled),g/dL,102,,,,,unit multiplicity check
+NWICU,canon_hemoglobin,(sampled),g/dL,1,,,,,unit multiplicity check
+NWICU,canon_hemoglobin,(sampled),gm/dL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_platelet,(sampled),K/uL,51,,,,,unit multiplicity check
+NWICU,canon_platelet,(sampled),K/µL,1,,,,,unit multiplicity check
+NWICU,canon_platelet,(sampled),10ˆ3/µL,1,,,,,unit multiplicity check
+NWICU,canon_platelet,(sampled),K/UL,1,,,,,unit multiplicity check
+NWICU,canon_platelet,(sampled),k/cu mm,1,,,,,unit multiplicity check
+NWICU,canon_platelet,(sampled),k/mcL,1,,,,,unit multiplicity check
+NWICU,canon_platelet,(sampled),NULL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_wbc,(sampled),K/uL,107,,,,,unit multiplicity check
+NWICU,canon_wbc,(sampled),K/µL,1,,,,,unit multiplicity check
+NWICU,canon_wbc,(sampled),10ˆ3/µL,1,,,,,unit multiplicity check
+NWICU,canon_wbc,(sampled),K/UL,1,,,,,unit multiplicity check
+NWICU,canon_wbc,(sampled),k/cu mm,1,,,,,unit multiplicity check
+NWICU,canon_wbc,(sampled),k/mcL,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_ptt,(sampled),sec,51,,,,,unit multiplicity check
+NWICU,canon_ptt,(sampled),Second(s),1,,,,,unit multiplicity check
+NWICU,canon_ptt,(sampled),Seconds,1,,,,,unit multiplicity check
+NWICU,canon_ptt,(sampled),seconds,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_lipase,(sampled),IU/L,51,,,,,unit multiplicity check
+NWICU,canon_lipase,(sampled),Unit/L,1,,,,,unit multiplicity check
+NWICU,canon_lipase,(sampled),units/L,1,,,,,unit multiplicity check
+NWICU,canon_lipase,(sampled),IU/L,1,,,,,unit multiplicity check
+NWICU,canon_lipase,(sampled),U/L,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_lactate,(sampled),mmol/L,53,,,,,unit multiplicity check
+NWICU,canon_lactate,(sampled),mMol/L,1,,,,,unit multiplicity check
+NWICU,canon_lactate,(sampled),mmol/L,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_ph,(sampled),units,83,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_amylase,(sampled),IU/L,51,,,,,unit multiplicity check
+NWICU,canon_amylase,(sampled),units/L,1,,,,,unit multiplicity check
+NWICU,canon_amylase,(sampled),Unit/L,1,,,,,unit multiplicity check
+NWICU,canon_amylase,(sampled),IU/L,1,,,,,unit multiplicity check
+MIMIC-IV+Note,canon_pao2,(sampled),mm Hg,51,,,,,unit multiplicity check
+eICU,canon_temperature,vitalPeriodic.temperature,,,C,35392,3.0,39.9,unit inferred from value distribution; official doc states vitalPeriodic temperature is Celsius
+eICU,canon_vasopressor_admin,infusionDrug.drugname,,,n/a,300000,,,"vasopressor name rule validated against 300000 sampled records; matched drugs: ['dobutamine', 'dobutamine (mcg/kg/min)', 'dobutamine (mcg/min)', 'dobutamine (ml/hr)', 'dopamine', 'dopamine ()', 'dopamine (mcg/kg/min)', 'dopamine (mcg/min)', 'dopamine (ml/hr)', 'epinephrine', 'epinephrine (mcg/hr)', 'epinephrine (mcg/kg/min)', 'epinephrine (mcg/min)', 'epinephrine (ml/hr)', 'milrinone', 'milrinone (mcg/kg/min)', 'norepinephrine', 'norepinephrine ()', 'norepinephrine (mcg/hr)', 'norepinephrine (mcg/kg/hr)', 'norepinephrine (mcg/kg/min)', 'norepinephrine (mcg/min)', 'norepinephrine (mg/hr)', 'norepinephrine (mg/min)', 'norepinephrine (ml/hr)', 'norepinephrine (unknown)', 'phenylephrine', 'phenylephrine ()', 'phenylephrine (mcg/hr)', 'phenylephrine (mcg/kg/min)', 'phenylephrine (mcg/min)', 'vasopressin', 'vasopressin (mcg/kg/min)', 'vasopressin (mcg/min)', 'vasopressin (mg/hr)', 'vasopressin (mg/min)', 'vasopressin (ml/hr)', 'vasopressin (units/hr)', 'vasopressin (units/min)']"
+MIMIC-IV+Note,canon_measurement_time,labevents.charttime vs storetime,,,minutes,50000,,,"storetime >= charttime in 75.1% of all sampled pairs; 12454 pairs negative (likely placeholder/future timestamps); median gap 8816.0 min within sane range; charttime = specimen collection (EVENT), storetime = recorded"
+NWICU,canon_hospital_mortality,admissions.hospital_expire_flag,,,n/a,61843,,,"flag distribution {'0': 61738, '1': 105}; 0 deaths in preflight -> STAGE-3 VERIFICATION REQUIRED"

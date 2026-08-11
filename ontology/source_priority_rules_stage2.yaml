@@ -1,0 +1,139 @@
+# Source priority rules (per canonical x database). Lower rank = preferred.
+
+canon_heart_rate:
+  database: HiRID
+  priority:
+    - rank: 1
+      source_table: observation_tables
+      rule: "variableid"
+
+canon_crrt_status:
+  database: MIMIC-IV+Note
+  priority:
+    - rank: 1
+      source_table: procedureevents
+      rule: "CRRT items"
+
+canon_heart_rate:
+  database: MIMIC-IV+Note
+  priority:
+    - rank: 1
+      source_table: chartevents
+      rule: "itemid in CHART_LABEL_MAP"
+
+canon_sbp:
+  database: MIMIC-IV+Note
+  priority:
+    - rank: 1
+      source_table: chartevents
+      rule: "arterial (invasive) > non-invasive"
+
+canon_temperature:
+  database: MIMIC-IV+Note
+  priority:
+    - rank: 1
+      source_table: chartevents
+      rule: "223761 Celsius > 223762 Fahrenheit"
+
+canon_urine_output:
+  database: MIMIC-IV+Note
+  priority:
+    - rank: 1
+      source_table: outputevents
+      rule: "urine items"
+
+canon_vasopressor_admin:
+  database: MIMIC-IV+Note
+  priority:
+    - rank: 1
+      source_table: inputevents
+      rule: "itemid in INPUT_LABEL_MAP"
+
+canon_ventilation_status:
+  database: MIMIC-IV+Note
+  priority:
+    - rank: 1
+      source_table: procedureevents
+      rule: "Invasive Ventilation start/end"
+
+canon_heart_rate:
+  database: NWICU
+  priority:
+    - rank: 1
+      source_table: chartevents
+      rule: "itemid in CHART_LABEL_MAP"
+
+canon_ventilation_status:
+  database: NWICU
+  priority:
+    - rank: 1
+      source_table: chartevents
+      rule: "vent mode items if present"
+
+canon_heart_rate:
+  database: SICdb
+  priority:
+    - rank: 1
+      source_table: data_float_m
+      rule: "DataID raw (minute)"
+    - rank: 2
+      source_table: data_float_h
+      rule: "DataID hourly aggregate"
+
+canon_lactate:
+  database: SICdb
+  priority:
+    - rank: 1
+      source_table: laboratory
+      rule: "LaboratoryID"
+
+canon_map:
+  database: eICU
+  priority:
+    - rank: 1
+      source_table: vitalPeriodic
+      rule: "systemicmean"
+    - rank: 2
+      source_table: vitalAperiodic
+      rule: "noninvasivemean"
+
+canon_sbp:
+  database: eICU
+  priority:
+    - rank: 1
+      source_table: vitalPeriodic
+      rule: "systemicsystolic (invasive)"
+    - rank: 2
+      source_table: vitalAperiodic
+      rule: "noninvasivesystolic"
+
+canon_temperature:
+  database: eICU
+  priority:
+    - rank: 1
+      source_table: vitalPeriodic
+      rule: "temperature"
+
+canon_urine_output:
+  database: eICU
+  priority:
+    - rank: 1
+      source_table: intakeOutput
+      rule: "cellpath/celllabel urine rule"
+
+canon_vasopressor_admin:
+  database: eICU
+  priority:
+    - rank: 1
+      source_table: infusionDrug
+      rule: "drugname vasopressor rule"
+
+canon_ventilation_status:
+  database: eICU
+  priority:
+    - rank: 1
+      source_table: respiratoryCare
+      rule: "airwaytype 1/2 + vent offsets"
+    - rank: 2
+      source_table: treatment
+      rule: "secondary"

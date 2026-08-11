@@ -1,0 +1,982 @@
+{
+  "canon_patient_id": {
+    "definition": "De-identified patient identifier",
+    "quantity": "identifier",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "unique per patient",
+    "eligible": true,
+    "domain": "anchor"
+  },
+  "canon_icu_stay_id": {
+    "definition": "De-identified ICU stay identifier",
+    "quantity": "identifier",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "unique per ICU stay",
+    "eligible": true,
+    "domain": "anchor"
+  },
+  "canon_hospital_admit_id": {
+    "definition": "De-identified hospital admission identifier",
+    "quantity": "identifier",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "unique per hospital admission",
+    "eligible": true,
+    "domain": "anchor"
+  },
+  "canon_hospital_id": {
+    "definition": "De-identified hospital/center identifier",
+    "quantity": "identifier",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "unique per hospital",
+    "eligible": false,
+    "domain": "anchor"
+  },
+  "canon_icu_admit_time": {
+    "definition": "ICU admission time (landmark t0)",
+    "quantity": "datetime",
+    "vtype": "datetime",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "once per ICU stay",
+    "eligible": true,
+    "domain": "time"
+  },
+  "canon_icu_discharge_time": {
+    "definition": "ICU discharge time",
+    "quantity": "datetime",
+    "vtype": "datetime",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "once per ICU stay",
+    "eligible": true,
+    "domain": "time"
+  },
+  "canon_hospital_admit_time": {
+    "definition": "Hospital admission time",
+    "quantity": "datetime",
+    "vtype": "datetime",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "once per admission",
+    "eligible": true,
+    "domain": "time"
+  },
+  "canon_hospital_discharge_time": {
+    "definition": "Hospital discharge time",
+    "quantity": "datetime",
+    "vtype": "datetime",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "once per admission",
+    "eligible": true,
+    "domain": "time"
+  },
+  "canon_calendar_period": {
+    "definition": "Calendar year / year group (temporal anchor; de-identification shift applies)",
+    "quantity": "calendar year",
+    "vtype": "integer",
+    "unit": "year",
+    "rng": [
+      2000,
+      2100
+    ],
+    "time_priority": "event",
+    "repeat": "once per admission",
+    "eligible": false,
+    "domain": "time"
+  },
+  "canon_age": {
+    "definition": "Age at admission (years)",
+    "quantity": "age",
+    "vtype": "float",
+    "unit": "year",
+    "rng": [
+      18,
+      120
+    ],
+    "time_priority": "event",
+    "repeat": "once per admission",
+    "eligible": true,
+    "domain": "demographic"
+  },
+  "canon_sex": {
+    "definition": "Sex (M/F/U per source coding)",
+    "quantity": "sex",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "once per patient",
+    "eligible": true,
+    "domain": "demographic"
+  },
+  "canon_ap_diagnosis": {
+    "definition": "Acute pancreatitis diagnosis indicator/code (ICD9 577.0*, ICD10 K85*)",
+    "quantity": "diagnosis",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "multiple codes per admission",
+    "eligible": true,
+    "domain": "cohort"
+  },
+  "canon_hospital_mortality": {
+    "definition": "In-hospital mortality (primary outcome)",
+    "quantity": "outcome",
+    "vtype": "binary",
+    "unit": "",
+    "rng": [
+      0,
+      1
+    ],
+    "time_priority": "event",
+    "repeat": "once per admission",
+    "eligible": true,
+    "domain": "outcome"
+  },
+  "canon_icu_mortality": {
+    "definition": "ICU mortality",
+    "quantity": "outcome",
+    "vtype": "binary",
+    "unit": "",
+    "rng": [
+      0,
+      1
+    ],
+    "time_priority": "event",
+    "repeat": "once per ICU stay",
+    "eligible": true,
+    "domain": "outcome"
+  },
+  "canon_death_time": {
+    "definition": "Time of death",
+    "quantity": "datetime",
+    "vtype": "datetime",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "once per patient",
+    "eligible": true,
+    "domain": "outcome"
+  },
+  "canon_icu_los": {
+    "definition": "ICU length of stay",
+    "quantity": "duration",
+    "vtype": "float",
+    "unit": "days",
+    "rng": [
+      0,
+      null
+    ],
+    "time_priority": "derived",
+    "repeat": "once per ICU stay",
+    "eligible": false,
+    "domain": "outcome"
+  },
+  "canon_hospital_los": {
+    "definition": "Hospital length of stay",
+    "quantity": "duration",
+    "vtype": "float",
+    "unit": "days",
+    "rng": [
+      0,
+      null
+    ],
+    "time_priority": "derived",
+    "repeat": "once per admission",
+    "eligible": false,
+    "domain": "outcome"
+  },
+  "canon_heart_rate": {
+    "definition": "Heart rate",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "bpm",
+    "rng": [
+      10,
+      300
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events; feature contract in stage 3",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_sbp": {
+    "definition": "Systolic blood pressure",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "mmHg",
+    "rng": [
+      30,
+      300
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_dbp": {
+    "definition": "Diastolic blood pressure",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "mmHg",
+    "rng": [
+      10,
+      250
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_map": {
+    "definition": "Mean arterial pressure",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "mmHg",
+    "rng": [
+      20,
+      250
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_respiratory_rate": {
+    "definition": "Respiratory rate",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "bpm",
+    "rng": [
+      2,
+      100
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_spo2": {
+    "definition": "Peripheral oxygen saturation",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "%",
+    "rng": [
+      30,
+      100
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_temperature": {
+    "definition": "Body temperature",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "C",
+    "rng": [
+      26,
+      44
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_wbc": {
+    "definition": "White blood cell count",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "K/uL",
+    "rng": [
+      0,
+      500
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_platelet": {
+    "definition": "Platelet count",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "K/uL",
+    "rng": [
+      0,
+      2000
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_hematocrit": {
+    "definition": "Hematocrit",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "%",
+    "rng": [
+      5,
+      75
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_hemoglobin": {
+    "definition": "Hemoglobin",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "g/dL",
+    "rng": [
+      1,
+      25
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_bun": {
+    "definition": "Blood urea nitrogen",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mg/dL",
+    "rng": [
+      0,
+      300
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_creatinine": {
+    "definition": "Creatinine",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mg/dL",
+    "rng": [
+      0,
+      30
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_sodium": {
+    "definition": "Sodium",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mmol/L",
+    "rng": [
+      80,
+      200
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_potassium": {
+    "definition": "Potassium",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mmol/L",
+    "rng": [
+      1,
+      10
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_calcium": {
+    "definition": "Total calcium",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mg/dL",
+    "rng": [
+      2,
+      25
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_glucose": {
+    "definition": "Glucose",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mg/dL",
+    "rng": [
+      10,
+      1500
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_bilirubin": {
+    "definition": "Total bilirubin",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mg/dL",
+    "rng": [
+      0,
+      80
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_albumin": {
+    "definition": "Albumin",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "g/dL",
+    "rng": [
+      0,
+      10
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_ast": {
+    "definition": "Aspartate aminotransferase",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "IU/L",
+    "rng": [
+      0,
+      20000
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_alt": {
+    "definition": "Alanine aminotransferase",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "IU/L",
+    "rng": [
+      0,
+      20000
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_alp": {
+    "definition": "Alkaline phosphatase",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "IU/L",
+    "rng": [
+      0,
+      10000
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_lactate": {
+    "definition": "Lactate",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mmol/L",
+    "rng": [
+      0,
+      50
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_lipase": {
+    "definition": "Lipase",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "IU/L",
+    "rng": [
+      0,
+      20000
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_amylase": {
+    "definition": "Amylase",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "IU/L",
+    "rng": [
+      0,
+      20000
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_inr": {
+    "definition": "International normalized ratio",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "ratio",
+    "rng": [
+      0.5,
+      20
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_pt": {
+    "definition": "Prothrombin time",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "s",
+    "rng": [
+      5,
+      200
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_ptt": {
+    "definition": "Partial thromboplastin time",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "s",
+    "rng": [
+      10,
+      400
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_pao2": {
+    "definition": "Partial pressure of oxygen (arterial preferred)",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "mmHg",
+    "rng": [
+      10,
+      800
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_fio2": {
+    "definition": "Fraction of inspired oxygen",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "fraction",
+    "rng": [
+      0.21,
+      1.0
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_ph": {
+    "definition": "Arterial pH",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "pH",
+    "rng": [
+      6.5,
+      8.0
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_gcs_eye": {
+    "definition": "GCS eye opening",
+    "quantity": "severity",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      1,
+      4
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "severity"
+  },
+  "canon_gcs_verbal": {
+    "definition": "GCS verbal response",
+    "quantity": "severity",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      1,
+      5
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "severity"
+  },
+  "canon_gcs_motor": {
+    "definition": "GCS motor response",
+    "quantity": "severity",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      1,
+      6
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "severity"
+  },
+  "canon_gcs_total": {
+    "definition": "GCS total score",
+    "quantity": "severity",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      3,
+      15
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "severity"
+  },
+  "canon_urine_output": {
+    "definition": "Urine output volume",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "mL",
+    "rng": [
+      0,
+      10000
+    ],
+    "time_priority": "event",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "support"
+  },
+  "canon_ventilation_status": {
+    "definition": "Mechanical ventilation status (none/O2/NIV/invasive)",
+    "quantity": "treatment",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      0,
+      3
+    ],
+    "time_priority": "event",
+    "repeat": "interval events (start/end)",
+    "eligible": true,
+    "domain": "support"
+  },
+  "canon_vasopressor_admin": {
+    "definition": "Vasopressor administration (norepi/epi/dopa/vaso/phenyl/dobutamine/milrinone)",
+    "quantity": "treatment",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      0,
+      1
+    ],
+    "time_priority": "event",
+    "repeat": "interval events (start/end)",
+    "eligible": true,
+    "domain": "support"
+  },
+  "canon_crrt_status": {
+    "definition": "Continuous renal replacement therapy status",
+    "quantity": "treatment",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      0,
+      1
+    ],
+    "time_priority": "event",
+    "repeat": "interval events",
+    "eligible": true,
+    "domain": "support"
+  },
+  "canon_pleural_effusion": {
+    "definition": "Pleural effusion (BISAP component; text/imaging only; no structured source)",
+    "quantity": "diagnosis",
+    "vtype": "binary",
+    "unit": "",
+    "rng": [
+      0,
+      1
+    ],
+    "time_priority": "recorded",
+    "repeat": "n/a",
+    "eligible": false,
+    "domain": "diagnosis"
+  },
+  "canon_measurement_time": {
+    "definition": "Generic event/measurement timestamp for a record",
+    "quantity": "time",
+    "vtype": "datetime",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "per record",
+    "eligible": true,
+    "domain": "time"
+  },
+  "canon_value_text": {
+    "definition": "Raw value as recorded text (lab/vital)",
+    "quantity": "raw",
+    "vtype": "string",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "recorded",
+    "repeat": "per record",
+    "eligible": false,
+    "domain": "raw"
+  },
+  "canon_lab_result": {
+    "definition": "Numeric lab result; row-level canonical resolved via item/lab dictionary",
+    "quantity": "laboratory",
+    "vtype": "float",
+    "unit": "per-item",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "resulted",
+    "repeat": "keep all results",
+    "eligible": true,
+    "domain": "lab"
+  },
+  "canon_vital_result": {
+    "definition": "Numeric vital/physiology result; row-level canonical resolved via item dictionary",
+    "quantity": "physiology",
+    "vtype": "float",
+    "unit": "per-item",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "measurement",
+    "repeat": "keep all events",
+    "eligible": true,
+    "domain": "vital"
+  },
+  "canon_item_key": {
+    "definition": "Item/lab-item identifier (dictionary key)",
+    "quantity": "identifier",
+    "vtype": "integer",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per item",
+    "eligible": false,
+    "domain": "dictionary"
+  },
+  "canon_dictionary_label": {
+    "definition": "Official dictionary label/name for an item",
+    "quantity": "dictionary",
+    "vtype": "string",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per item",
+    "eligible": false,
+    "domain": "dictionary"
+  },
+  "canon_dictionary_unit": {
+    "definition": "Official dictionary unit for an item",
+    "quantity": "dictionary",
+    "vtype": "string",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per item",
+    "eligible": false,
+    "domain": "dictionary"
+  },
+  "canon_icd_code": {
+    "definition": "ICD diagnosis code (dictionary key)",
+    "quantity": "dictionary",
+    "vtype": "string",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per code",
+    "eligible": false,
+    "domain": "dictionary"
+  },
+  "canon_icd_title": {
+    "definition": "ICD diagnosis long title (dictionary)",
+    "quantity": "dictionary",
+    "vtype": "string",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per code",
+    "eligible": false,
+    "domain": "dictionary"
+  },
+  "canon_drug_name": {
+    "definition": "Drug name (administration records)",
+    "quantity": "treatment",
+    "vtype": "string",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "event",
+    "repeat": "per record",
+    "eligible": false,
+    "domain": "support"
+  },
+  "canon_hospital_region": {
+    "definition": "Hospital region (center-level covariate)",
+    "quantity": "hospital",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per hospital",
+    "eligible": false,
+    "domain": "center"
+  },
+  "canon_hospital_bed_category": {
+    "definition": "Hospital bed-size category (center-level covariate)",
+    "quantity": "hospital",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per hospital",
+    "eligible": false,
+    "domain": "center"
+  },
+  "canon_hospital_teaching": {
+    "definition": "Hospital teaching status (center-level covariate)",
+    "quantity": "hospital",
+    "vtype": "categorical",
+    "unit": "",
+    "rng": [
+      null,
+      null
+    ],
+    "time_priority": "n/a",
+    "repeat": "per hospital",
+    "eligible": false,
+    "domain": "center"
+  }
+}

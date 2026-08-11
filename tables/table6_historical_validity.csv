@@ -1,0 +1,3 @@
+analysis,status,result_role,result_ids
+Stage-6B decomposition,Historical Stage-6B implementation audit—provenance only; not current decomposition estimates or effect analysis,historical_invalid,R8_HISTORICAL_STAGE6B_IMPLEMENTATION_AUDIT
+Legacy pooled OOF,Superseded invalid provenance; prediction/outcome order was misaligned. Correct keyed OOF is reported in Table 2.,historical_invalid,R8_HISTORICAL_LEGACY_POOLED_OOF_INVALID

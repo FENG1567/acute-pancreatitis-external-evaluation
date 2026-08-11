@@ -1,0 +1,19 @@
+analysis,metric,estimate,patient_95CI,result_role,result_ids
+paired A minus B,auroc,0.009,-0.010 to 0.031,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_MINUS_B_AUROC
+paired A minus B,auprc,-0.004,-0.040 to 0.024,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_MINUS_B_AUPRC
+paired A minus B,brier,0.003,-0.002 to 0.008,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_MINUS_B_BRIER
+paired A minus B,log_loss,0.005,-0.012 to 0.022,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_MINUS_B_LOG_LOSS
+paired A minus B,calibration_intercept,-0.103,-0.210 to -0.012,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_MINUS_B_CALIBRATION_INTERCEPT
+paired A minus B,calibration_slope,0.013,-0.031 to 0.053,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_MINUS_B_CALIBRATION_SLOPE
+hospital-cluster bootstrap,auroc,0.859,0.771 to 0.933,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_AUROC_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,auprc,0.306,0.174 to 0.491,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_AUPRC_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,brier,0.065,0.045 to 0.087,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_BRIER_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,log_loss,0.231,0.158 to 0.311,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_LOG_LOSS_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,calibration_intercept,-1.476,-2.117 to -0.865,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_CALIBRATION_INTERCEPT_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,calibration_slope,0.446,0.309 to 0.651,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_A_CALIBRATION_SLOPE_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,auroc,0.850,0.746 to 0.933,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_B_AUROC_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,auprc,0.310,0.173 to 0.507,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_B_AUPRC_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,brier,0.062,0.042 to 0.085,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_B_BRIER_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,log_loss,0.226,0.149 to 0.315,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_B_LOG_LOSS_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,calibration_intercept,-1.373,-2.014 to -0.764,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_B_CALIBRATION_INTERCEPT_HOSPITAL_CLUSTER_CI
+hospital-cluster bootstrap,calibration_slope,0.433,0.290 to 0.646,primary_locked_external,R8_EICU_PRIMARY_LOCKED_359_B_CALIBRATION_SLOPE_HOSPITAL_CLUSTER_CI

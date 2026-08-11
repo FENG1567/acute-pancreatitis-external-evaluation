@@ -1,0 +1,8 @@
+name: ap-stage7-audit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r environment/requirements.lock

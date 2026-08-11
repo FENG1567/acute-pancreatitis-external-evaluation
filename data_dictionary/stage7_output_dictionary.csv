@@ -1,0 +1,31 @@
+asset,column,type,required,definition,allowed_values_or_format
+source_of_truth_metrics,result_id,string,yes,Unique immutable identifier for one reportable result,R7_* unique
+source_of_truth_metrics,metric_name,string,yes,Named estimand or descriptive quantity,controlled project vocabulary
+source_of_truth_metrics,database,string,yes,Database to which the estimate applies,MIMIC-IV/eICU/NWICU/SICdb/HiRID/cross-database
+source_of_truth_metrics,population,string,yes,Frozen analytic population label,free text tied to cohort lock
+source_of_truth_metrics,model,string,yes,Model/score or comparison label,logistic A/B; exploratory labels explicit
+source_of_truth_metrics,analysis_level,string,yes,Independent analysis unit,patient/hospital/database
+source_of_truth_metrics,estimate,number,yes,Point estimate in native metric units,finite numeric or documented NA
+source_of_truth_metrics,ci_low,number,no,Lower confidence bound,blank if no valid CI
+source_of_truth_metrics,ci_high,number,no,Upper confidence bound,blank if no valid CI
+source_of_truth_metrics,denominator,integer,yes,Number of analysable units,non-negative integer
+source_of_truth_metrics,events,integer,no,Number with outcome,non-negative integer or blank
+source_of_truth_metrics,bootstrap_type,string,yes,Uncertainty resampling design,patient_percentile/hospital_cluster/etc
+source_of_truth_metrics,bootstrap_replicates,integer,yes,Number of valid resamples,non-negative integer
+source_of_truth_metrics,result_role,string,yes,Claim hierarchy,primary/exploratory/descriptive/invalid_for_claim/superseded
+source_of_truth_metrics,source_file,string,yes,Relative path to immutable input or source result,no absolute/private path
+source_of_truth_metrics,source_locator,string,yes,Column/row/key locating the result,free text
+source_of_truth_metrics,generating_code,string,yes,Relative path to deterministic generator,no absolute/private path
+source_of_truth_metrics,input_sha256,string,yes,Cryptographic hash of direct input,64 lowercase hexadecimal
+source_of_truth_metrics,model_sha256,string,no,Frozen model hash where applicable,64 lowercase hexadecimal or blank
+source_of_truth_metrics,git_commit,string,yes,Code commit used for the calculation,40 hexadecimal
+result_traceability,result_id,string,yes,Foreign key to metric registry,must resolve uniquely
+result_traceability,input_file,string,yes,Direct input file for recomputation,relative path
+result_traceability,input_sha256,string,yes,Hash of direct input,64 lowercase hexadecimal
+result_traceability,code,string,yes,Generator or audit script,relative path
+result_traceability,method,string,yes,Statistical/computational method,concise text
+result_traceability,status,string,yes,Traceability validation status,PASS/FAIL/BLOCKED
+claim_evidence_matrix,claim_id,string,yes,Unique claim identifier,C* unique
+claim_evidence_matrix,result_ids,string,no,Semicolon-separated supporting results,every id must resolve
+claim_evidence_matrix,status,string,yes,Evidentiary status,supported/conditional/not_supported/invalid_for_claim
+manuscript_template,token,string,yes,Automatic manuscript value token,"{{result_id|field|format}}"
