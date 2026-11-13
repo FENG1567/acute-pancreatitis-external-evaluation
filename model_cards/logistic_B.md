@@ -1,11 +1,5 @@
-# Model card - logistic B (value plus missingness)
+# Frozen Model B
 
-- **Status:** frozen primary research model.
-- **Intended research use:** same target and evaluation path as logistic A, with pre-specified presence/grouped-missingness features.
-- **Input tier:** logistic A values plus frozen missingness indicators; no post-landmark information.
-- **Pipeline:** training-fitted imputation, scaling, and ridge logistic regression stored as one frozen object.
-- **Object hash:** `7138a646a0391c3d393a99d50aeb7cb7bab7257c15498b77ffaeea94db8c942b`.
-- **Evidence boundary:** paired external intervals do not establish stable superiority over A. Missingness associations do not identify clinician intent or causal effects.
-- **Primary limitations:** sparse events, internal OOF artifact inconsistency, site-specific missingness semantics, unstable calibration, no prospective evaluation.
-- **Prohibited use:** clinical deployment or statements that missingness features clearly improve transport.
-- **Availability:** fitted-object redistribution is pending privacy/data-use/licence review.
+L2-regularised logistic-regression model for in-hospital mortality in adults with acute pancreatitis alive and observed at a 24-hour ICU landmark. Developed in MIMIC-IV and externally evaluated in eICU. Model B has 46 transformed inputs. Model A uses age, sex and first/worst values for 15 clinical variables. Model B adds measurement-presence indicators; the all-missing GCS-presence indicator is not a usable transformed input. Exact variable names, units and summary rules appear in Table 1 panel A.
+
+Imputation, scaling, feature order and model coefficients remain frozen. This revision corrects source gender labels without refitting or choosing a threshold. Trusted model hashes and execution versions are in `provenance/external_evaluation_manifest.json`. Serialized model objects and patient-level inputs are not distributed. Current external metrics are in `final/source_of_truth_metrics.csv`. This is a research artifact, not a clinically validated deployment product.

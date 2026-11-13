@@ -1,0 +1,9 @@
+{
+  "inputs_sha256": {
+    "primary": "f17f142e4b2249dc308677a20b784beced86286d75b5faa93dc1c4d42842506d",
+    "sensitive": "282fc05bd4153cd6c56b179ecbc1303bc280250fe5f1d042e4a55a3747a15c28"
+  },
+  "kind": "aggregate_plot_summaries",
+  "identifiers_written": false,
+  "binning": "ten equal-size ordered groups; histogram 20 fixed bins"
+}

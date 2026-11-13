@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Stage 2 ontology definitions (frozen data, no execution).
+"""Canonical ontology definitions (reference data, no execution).
 
-Canonical variable dictionary + curated per-database mapping rules with
-evidence anchors. The generator (stage2_build_ontology.py) validates every
-rule against the actual extracted official dictionaries and data headers.
+Canonical variable dictionary and curated per-database mapping rules with
+evidence anchors. Each evidence string names the dictionary or table header
+that the rule was checked against.
 """
 
 CANONICAL = {
@@ -80,7 +80,7 @@ CANONICAL = {
     # ------------------------------------------------------------- vitals
     "canon_heart_rate": dict(definition="Heart rate", quantity="physiology",
                              vtype="float", unit="bpm", rng=(10, 300),
-                             time_priority="measurement", repeat="keep all events; feature contract in stage 3",
+                             time_priority="measurement", repeat="keep all events; feature contract",
                              eligible=True, domain="vital"),
     "canon_sbp": dict(definition="Systolic blood pressure", quantity="physiology",
                       vtype="float", unit="mmHg", rng=(30, 300),
@@ -298,7 +298,7 @@ CANONICAL = {
 # ---------------------------------------------------------------------------
 # Curated mapping rules. Each rule: (table, field_pattern, canonical, confidence,
 # evidence, timestamp_field, timestamp_semantics, offset_ref, offset_unit, note)
-# field_pattern: exact field name or regex; generator resolves against headers.
+# field_pattern: exact field name or regex, matched against the source headers.
 # ---------------------------------------------------------------------------
 
 RULES = {
@@ -430,7 +430,7 @@ RULES = {
         ("admissions", "admittime", "canon_hospital_admit_time", "confirmed", "NWICU v0.1.0 header; MIMIC-style semantics", "admittime", "event", "calendar", "datetime"),
         ("admissions", "dischtime", "canon_hospital_discharge_time", "confirmed", "NWICU v0.1.0 header", "dischtime", "event", "calendar", "datetime"),
         ("admissions", "deathtime", "canon_death_time", "probable", "NWICU v0.1.0 header; semantics per MIMIC-style docs", "deathtime", "event", "calendar", "datetime"),
-        ("admissions", "hospital_expire_flag", "canon_hospital_mortality", "probable", "NWICU v0.1.0 header; CANDIDATE mapping - independent verification REQUIRED in stage 3 (preflight found 0 deaths)", "", "n/a", "n/a", "STAGE-3 VERIFICATION REQUIRED"),
+        ("admissions", "hospital_expire_flag", "canon_hospital_mortality", "probable", "NWICU v0.1.0 header; CANDIDATE mapping - source confirmation pending (preflight found 0 deaths)", "", "n/a", "n/a", "SOURCE CONFIRMATION PENDING"),
         ("icustays", "subject_id", "canon_patient_id", "confirmed", "NWICU v0.1.0 header", "", "n/a", "n/a", ""),
         ("icustays", "hadm_id", "canon_hospital_admit_id", "confirmed", "NWICU v0.1.0 header", "", "n/a", "n/a", ""),
         ("icustays", "stay_id", "canon_icu_stay_id", "confirmed", "NWICU v0.1.0 header", "", "n/a", "n/a", ""),
@@ -460,20 +460,20 @@ RULES = {
         ("chartevents", "valuenum", "canon_vital_result", "confirmed", "numeric result by itemid", "", "n/a", "n/a", ""),
         ("emar", "*", "out_of_scope", "not_applicable", "med administration charting", "", "n/a", "n/a", ""),
         ("prescriptions", "*", "out_of_scope", "not_applicable", "order-level records", "", "n/a", "n/a", ""),
-        ("procedureevents", "*", "out_of_scope", "not_applicable", "not needed for NWICU (ventilation via chartevents items if present)", "", "n/a", "n/a", "review in stage 3 if needed"),
+        ("procedureevents", "*", "out_of_scope", "not_applicable", "not needed for NWICU (ventilation via chartevents items if present)", "", "n/a", "n/a", "review if needed"),
     ],
     "eICU": [
         ("patient", "patientunitstayid", "canon_icu_stay_id", "confirmed", "eICU-CRD v2.0 official documentation (patient table)", "", "n/a", "n/a", ""),
         ("patient", "patienthealthsystemstayid", "canon_hospital_admit_id", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
         ("patient", "uniquepid", "canon_patient_id", "confirmed", "eICU-CRD v2.0 docs: unique de-identified patient id", "", "n/a", "n/a", ""),
         ("patient", "gender", "canon_sex", "confirmed", "eICU-CRD v2.0 docs: M/F/U", "", "n/a", "n/a", ""),
-        ("patient", "age", "canon_age", "confirmed", "eICU-CRD v2.0 docs; VERIFIED by sampling: integer years 0-89 with '> 89' sentinel (capped at 89 per official docs); empty = missing", "", "n/a", "n/a", "value rule: '> 89' -> 89; missing -> NA (confirmed by sampled distribution)"),
+        ("patient", "age", "canon_age", "confirmed", "eICU-CRD v2.0 docs; checked by sampling: integer years 0-89 with '> 89' sentinel (capped at 89 per official docs); empty = missing", "", "n/a", "n/a", "value rule: '> 89' -> 89; missing -> NA (confirmed by sampled distribution)"),
         ("patient", "hospitalid", "canon_hospital_id", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
         ("patient", "unitadmittime24", "canon_icu_admit_time", "confirmed", "eICU-CRD v2.0 docs: clock time of ICU admit; unitadmitoffset=0 is anchor", "unitadmittime24", "event", "icu_admit", "time24+offset", "LANDMARK T0"),
         ("patient", "unitadmitoffset", "canon_icu_admit_time", "confirmed", "eICU-CRD v2.0 docs: offset = 0 at ICU admission (anchor)", "unitadmitoffset", "event", "icu_admit", "minutes", "anchor=0"),
         ("patient", "unitdischargeoffset", "canon_icu_discharge_time", "confirmed", "eICU-CRD v2.0 docs: minutes from ICU admission", "unitdischargeoffset", "event", "icu_admit", "minutes"),
         ("patient", "unitdischargetime24", "canon_icu_discharge_time", "confirmed", "eICU-CRD v2.0 docs", "unitdischargetime24", "event", "icu_admit", "time24+offset"),
-        ("patient", "hospitaladmitoffset", "canon_hospital_admit_time", "confirmed", "eICU-CRD v2.0 docs: minutes from ICU admit (can be negative, pre-ICU)", "hospitaladmitoffset", "event", "icu_admit", "minutes", "negative = pre-ICU; VERIFIED by sampling"),
+        ("patient", "hospitaladmitoffset", "canon_hospital_admit_time", "confirmed", "eICU-CRD v2.0 docs: minutes from ICU admit (can be negative, pre-ICU)", "hospitaladmitoffset", "event", "icu_admit", "minutes", "negative = pre-ICU; checked by sampling"),
         ("patient", "hospitaldischargeoffset", "canon_hospital_discharge_time", "confirmed", "eICU-CRD v2.0 docs", "hospitaldischargeoffset", "event", "icu_admit", "minutes"),
         ("patient", "hospitaldischargestatus", "canon_hospital_mortality", "confirmed", "eICU-CRD v2.0 docs: Expired = in-hospital death (PRIMARY OUTCOME)", "", "n/a", "n/a", "PRIMARY OUTCOME"),
         ("patient", "unitdischargestatus", "canon_icu_mortality", "confirmed", "eICU-CRD v2.0 docs: Expired = ICU death", "", "n/a", "n/a", ""),
@@ -504,7 +504,7 @@ RULES = {
         ("diagnosis", "diagnosispriority", "canon_ap_diagnosis", "confirmed", "primary/secondary flag", "", "n/a", "n/a", ""),
         ("lab", "patientunitstayid", "canon_icu_stay_id", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
         ("lab", "labname", "canon_item_key", "confirmed", "eICU-CRD v2.0 official lab name list (lab table)", "", "n/a", "n/a", "resolved per EICU_LAB_MAP"),
-        ("lab", "labresultoffset", "canon_measurement_time", "confirmed", "eICU-CRD v2.0 docs: minutes from ICU admission; can be negative (pre-ICU results)", "labresultoffset", "event", "icu_admit", "minutes", "VERIFIED by sampling"),
+        ("lab", "labresultoffset", "canon_measurement_time", "confirmed", "eICU-CRD v2.0 docs: minutes from ICU admission; can be negative (pre-ICU results)", "labresultoffset", "event", "icu_admit", "minutes", "checked by sampling"),
         ("lab", "labresult", "canon_lab_result", "confirmed", "numeric result", "", "n/a", "n/a", ""),
         ("lab", "labresulttext", "canon_value_text", "duplicate_source", "text duplicate", "", "n/a", "n/a", ""),
         ("lab", "labmeasurenameinterface", "canon_dictionary_unit", "confirmed", "eICU-CRD v2.0 docs: unit of measurement (interface label)", "", "n/a", "n/a", "unit evidence"),
@@ -516,11 +516,11 @@ RULES = {
         ("customLab", "labotherresult", "canon_lab_result", "probable", "numeric result", "", "n/a", "n/a", ""),
         ("customLab", "labothervaluetext", "canon_value_text", "duplicate_source", "", "", "n/a", "n/a", ""),
         ("vitalPeriodic", "patientunitstayid", "canon_icu_stay_id", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
-        ("vitalPeriodic", "observationoffset", "canon_measurement_time", "confirmed", "eICU-CRD v2.0 docs: minutes from ICU admission", "observationoffset", "event", "icu_admit", "minutes", "VERIFIED by sampling"),
+        ("vitalPeriodic", "observationoffset", "canon_measurement_time", "confirmed", "eICU-CRD v2.0 docs: minutes from ICU admission", "observationoffset", "event", "icu_admit", "minutes", "checked by sampling"),
         ("vitalPeriodic", "heartrate", "canon_heart_rate", "confirmed", "eICU-CRD v2.0 docs: vitalPeriodic vital signs", "", "n/a", "n/a", ""),
         ("vitalPeriodic", "respiration", "canon_respiratory_rate", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
         ("vitalPeriodic", "sao2", "canon_spo2", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
-        ("vitalPeriodic", "temperature", "canon_temperature", "probable", "eICU-CRD v2.0 docs; unit (C vs F) to be verified by sampling", "", "n/a", "n/a", "UNIT VERIFICATION by sampling (stage 2)"),
+        ("vitalPeriodic", "temperature", "canon_temperature", "probable", "eICU-CRD v2.0 docs; unit (C vs F) pending sample-level confirmation", "", "n/a", "n/a", "UNIT CHECK BY SAMPLING"),
         ("vitalPeriodic", "systemicsystolic", "canon_sbp", "confirmed", "eICU-CRD v2.0 docs: invasive systemic pressure", "", "n/a", "n/a", ""),
         ("vitalPeriodic", "systemicdiastolic", "canon_dbp", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
         ("vitalPeriodic", "systemicmean", "canon_map", "confirmed", "eICU-CRD v2.0 docs", "", "n/a", "n/a", ""),
@@ -577,9 +577,9 @@ RULES = {
         ("apachePatientResult", "apachescore", "canon_ap_diagnosis", "out_of_scope", "derived APACHE score; not in primary model set per protocol", "", "n/a", "n/a", "possible sensitivity anchor only"),
         ("apachePatientResult", "acutephysiologyscore", "canon_ap_diagnosis", "out_of_scope", "derived", "", "n/a", "n/a", ""),
         ("apachePatientResult", "predictedhospitalmortality", "canon_hospital_mortality", "out_of_scope", "derived prediction, not outcome", "", "n/a", "n/a", ""),
-        ("apachePatientResult", "actualhospitalmortality", "canon_hospital_mortality", "probable", "documented outcome; cross-check with patient.hospitaldischargestatus", "", "n/a", "n/a", "cross-check in stage 3"),
+        ("apachePatientResult", "actualhospitalmortality", "canon_hospital_mortality", "probable", "documented outcome; cross-check with patient.hospitaldischargestatus", "", "n/a", "n/a", "cross-check against source table"),
         ("apachePatientResult", "predictedicumortality", "canon_icu_mortality", "out_of_scope", "derived", "", "n/a", "n/a", ""),
-        ("apachePatientResult", "actualicumortality", "canon_icu_mortality", "probable", "documented outcome", "", "n/a", "n/a", "cross-check in stage 3"),
+        ("apachePatientResult", "actualicumortality", "canon_icu_mortality", "probable", "documented outcome", "", "n/a", "n/a", "cross-check against source table"),
         ("apachePredVar", "age", "canon_age", "probable", "APACHE model input age (pre-ICU semantics)", "", "n/a", "n/a", "pre-ICU; not primary"),
         ("apachePredVar", "gender", "canon_sex", "probable", "APACHE input", "", "n/a", "n/a", "pre-ICU; not primary"),
         ("apachePredVar", "region", "canon_hospital_region", "duplicate_source", "same as hospital.region", "", "n/a", "n/a", ""),
@@ -630,13 +630,13 @@ RULES = {
         ("cases", "CaseID", "canon_icu_stay_id", "confirmed", "SICdb v1.0.8 Documentation.pdf + cases.csv.gz header", "", "n/a", "n/a", ""),
         ("cases", "PatientID", "canon_patient_id", "confirmed", "SICdb v1.0.8 docs", "", "n/a", "n/a", ""),
         ("cases", "AdmissionYear", "canon_calendar_period", "confirmed", "SICdb v1.0.8 docs", "", "n/a", "n/a", ""),
-        ("cases", "ICUOffset", "canon_icu_admit_time", "probable", "offset of ICU admission; semantics to verify", "", "n/a", "n/a", "verify in time audit"),
+        ("cases", "ICUOffset", "canon_icu_admit_time", "probable", "offset of ICU admission; semantics to verify", "", "n/a", "n/a", "verify against event times"),
         ("cases", "TimeOfStay", "canon_icu_los", "probable", "ICU stay duration", "", "n/a", "n/a", ""),
         ("cases", "HospitalStayDays", "canon_hospital_los", "probable", "hospital stay days", "", "n/a", "n/a", ""),
         ("cases", "HospitalDischargeDay", "canon_hospital_discharge_time", "probable", "day of discharge (ordinal)", "", "n/a", "n/a", ""),
-        ("cases", "OffsetOfDeath", "canon_death_time", "probable", "offset of death; CANDIDATE mapping - stage 3 verification REQUIRED", "OffsetOfDeath", "event", "icu_admit", "minutes", "STAGE-3 VERIFICATION REQUIRED"),
-        ("cases", "DischargeState", "canon_hospital_mortality", "probable", "discharge state; CANDIDATE outcome mapping - stage 3 verification REQUIRED", "", "n/a", "n/a", "STAGE-3 VERIFICATION REQUIRED"),
-        ("cases", "HospitalDischargeType", "canon_hospital_mortality", "probable", "CANDIDATE; verification required", "", "n/a", "n/a", "STAGE-3 VERIFICATION REQUIRED"),
+        ("cases", "OffsetOfDeath", "canon_death_time", "probable", "offset of death; CANDIDATE mapping - source confirmation pending", "OffsetOfDeath", "event", "icu_admit", "minutes", "SOURCE CONFIRMATION PENDING"),
+        ("cases", "DischargeState", "canon_hospital_mortality", "probable", "discharge state; CANDIDATE outcome mapping - source confirmation pending", "", "n/a", "n/a", "SOURCE CONFIRMATION PENDING"),
+        ("cases", "HospitalDischargeType", "canon_hospital_mortality", "probable", "CANDIDATE; confirmation pending", "", "n/a", "n/a", "SOURCE CONFIRMATION PENDING"),
         ("cases", "EstimatedSurvivalObservationTime", "canon_death_time", "probable", "censoring time", "", "n/a", "n/a", ""),
         ("cases", "Sex", "canon_sex", "confirmed", "SICdb v1.0.8 docs", "", "n/a", "n/a", ""),
         ("cases", "AgeOnAdmission", "canon_age", "confirmed", "SICdb v1.0.8 docs", "", "n/a", "n/a", ""),
@@ -663,7 +663,7 @@ RULES = {
         ("d_references", "LOINC_code", "canon_dictionary_label", "confirmed", "LOINC mapping", "", "n/a", "n/a", "dictionary evidence"),
         ("data_float_m", "CaseID", "canon_icu_stay_id", "confirmed", "SICdb v1.0.8 docs", "", "n/a", "n/a", ""),
         ("data_float_m", "DataID", "canon_item_key", "confirmed", "SICdb v1.0.8 d_references lookup", "", "n/a", "n/a", "resolved per SIC_REF_MAP"),
-        ("data_float_m", "Offset", "canon_measurement_time", "confirmed", "minutes from ICU admission (EVENT); VERIFIED by sampling", "Offset", "event", "icu_admit", "minutes"),
+        ("data_float_m", "Offset", "canon_measurement_time", "confirmed", "minutes from ICU admission (EVENT); checked by sampling", "Offset", "event", "icu_admit", "minutes"),
         ("data_float_m", "Val", "canon_vital_result", "confirmed", "numeric value", "", "n/a", "n/a", ""),
         ("data_float_h", "CaseID", "canon_icu_stay_id", "confirmed", "SICdb v1.0.8 docs", "", "n/a", "n/a", ""),
         ("data_float_h", "DataID", "canon_item_key", "confirmed", "d_references lookup", "", "n/a", "n/a", "hourly aggregates; SECONDARY to data_float_m"),
@@ -708,7 +708,7 @@ RULES = {
         ("observation_tables", "patientid", "canon_patient_id", "confirmed", "HiRID v1.1.1 docs", "", "n/a", "n/a", "REFERENCE-ONLY"),
         ("observation_tables", "variableid", "canon_item_key", "confirmed", "HiRID v1.1.1 hirid_variable_reference lookup (ID)", "", "n/a", "n/a", "resolved per HIRID_REF_MAP"),
         ("observation_tables", "value", "canon_vital_result", "confirmed", "numeric value", "", "n/a", "n/a", ""),
-        ("observation_tables", "observationoffset", "canon_measurement_time", "confirmed", "minutes from ICU admission (EVENT); VERIFIED by sampling", "observationoffset", "event", "icu_admit", "minutes"),
+        ("observation_tables", "observationoffset", "canon_measurement_time", "confirmed", "minutes from ICU admission (EVENT); checked by sampling", "observationoffset", "event", "icu_admit", "minutes"),
         ("pharma_records", "patientid", "canon_patient_id", "confirmed", "HiRID v1.1.1 docs", "", "n/a", "n/a", "REFERENCE-ONLY"),
         ("pharma_records", "givenat", "canon_measurement_time", "confirmed", "administration time offset (EVENT)", "givenat", "event", "icu_admit", "minutes"),
         ("pharma_records", "enteredentryat", "canon_measurement_time", "probable", "entry recorded offset", "enteredentryat", "recorded", "icu_admit", "minutes", "LEAK RISK: recorded"),
@@ -728,7 +728,7 @@ RULES = {
 
 # ---------------------------------------------------------------------------
 # Item-label maps: canonical <- official dictionary label patterns
-# (validated by the generator against the extracted dictionaries)
+# (evidence strings follow the extracted dictionaries)
 # ---------------------------------------------------------------------------
 LAB_LABEL_MAP = {
     "canon_glucose": [r"^Glucose$", r"^Glucose, POC$", r"^Glucose, Whole Blood$"],

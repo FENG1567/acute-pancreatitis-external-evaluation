@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Stage 2 extra mapping rules (second layer) merged into the ontology."""
+"""Additional mapping rules (second layer) merged into the ontology."""
 # (table, field, canonical, confidence, evidence, ts_field, ts_semantics, offset_ref, offset_unit, note)
 
 EXTRA_RULES = {

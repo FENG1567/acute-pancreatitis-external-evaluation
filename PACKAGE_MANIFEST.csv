@@ -1,119 +1,104 @@
-﻿"source_relative_path","target_relative_path","purpose","size_bytes","sha256","provenance"
-"generated",".gitignore","Generated package document or utility","250","c08a943ca2155f6456b7e8b90b282b10eeb4fd2134ddb31b236c7571b1edffaa","generated"
-"06_完整复现与审计包/audits/feature_leakage_test.csv","audits/feature_leakage_test.csv","Copied source artifact","481","f3a9f36eb05895c59346206070a9d870d221aa301dc3113f66d9ffaf961898ce","copied"
-"06_完整复现与审计包/audits/feature_transportability_matrix.csv","audits/feature_transportability_matrix.csv","Copied source artifact","50455","694a937792f76ff169c0f2670ab6d99e05e6529e590c9d4512822cb8a9fefebd","copied"
-"06_完整复现与审计包/audits/flow_counts.csv","audits/flow_counts.csv","Copied source artifact","1842","78b76b685cde7ba3ca35e92c9a8b2f1945feaa4fbd8cdbdf3cfcc49b753d429a","copied"
-"06_完整复现与审计包/audits/phenotype_audit.csv","audits/phenotype_audit.csv","Copied source artifact","472","c8f599a3b6620c16b6a17ab9ddc6ff2b5438084c12563715832cc5b993a3c7cb","copied"
-"06_完整复现与审计包/audits/structural_availability_matrix.csv","audits/structural_availability_matrix.csv","Copied source artifact","5331","748b68e457947f25057de317789aaf427ed2020c524cf768c4aa8b2658bd8f4c","copied"
-"06_完整复现与审计包/audits/time_axis_audit.csv","audits/time_axis_audit.csv","Copied source artifact","1285","bc4882133fc3d3a3b5fe4007a5b2c3a37a8e694af0a3d3e7dfb8d51bb62bf447","copied"
-"06_完整复现与审计包/code/stage2_ontology_defs.py","code/stage2_ontology_defs.py","Copied source artifact","98873","5d54fdb138cf3d4ba89552a0fa3e96564fe6be1b7bac22d18d3dc7dd8b1ad7b1","copied"
-"06_完整复现与审计包/code/stage2_ontology_defs_extra.py","code/stage2_ontology_defs_extra.py","Copied source artifact","24040","b508ea7c891ad9fa615595a250fa20580f75b62ad522b5ef74824faa5876dd05","copied"
-"06_完整复现与审计包/cohort/cohort_spec.yaml","cohort/cohort_spec.yaml","Copied source artifact","6350","56ffa224b26112c36f79b5e686817d9c607f3f74936ca7d0dd0a3de08baf734b","copied"
-"06_完整复现与审计包/cohort/label_version.txt","cohort/label_version.txt","Copied source artifact","84","19d7230c1e8b810cdb516f9f09b4dc52207b93e48568b6c7290c6f13bb976a64","copied"
-"06_完整复现与审计包/cohort/protocol_amendment_A-7-01_clinical_score_computability.md","cohort/protocol_amendment_A-7-01_clinical_score_computability.md","Copied source artifact","1263","ef89c5b9c0bcaddc923ffa703db5d77c7043a7c9fada5afc5260b54ad999aa6a","copied"
-"06_完整复现与审计包/cohort/protocol_amendment_A-7-02_calibration_recomputation.md","cohort/protocol_amendment_A-7-02_calibration_recomputation.md","Copied source artifact","4263","375516655c16aed0db29496f90766281bcafb7848dd44f579c035c6bb5807a31","copied"
-"06_完整复现与审计包/cohort/protocol_amendment_A-7-03_internal_validation.md","cohort/protocol_amendment_A-7-03_internal_validation.md","Copied source artifact","1178","217d6aa80a3077ea54e4911a5d47448bd33f4d729a1a240c64a505ecad94a3ed","copied"
-"06_完整复现与审计包/config/paths.example.yaml","config/paths.example.yaml","Copied source artifact","329","334bf8be061f307788ac22755103c4fe2e3a1b0c5981da596b9aedf9d8f5e763","copied"
-"generated","DATA_ACCESS.md","Generated package document or utility","655","fcf6923ccf3697e44a2faa00acf96bde95b1a8374e6b7d700600967282302fd8","generated"
-"06_完整复现与审计包/data_dictionary/README.md","data_dictionary/README.md","Copied source artifact","906","aa3569942da1477663a362672a0ed6e03bf9f4d2935cf2b1b559c81ccaceee1e","copied"
-"06_完整复现与审计包/data_dictionary/result_role_dictionary.md","data_dictionary/result_role_dictionary.md","Copied source artifact","425","44df04228f6f384d21bcd1ad4e274ef80bed07aced5d880bfb87772e869e543d","copied"
-"06_完整复现与审计包/data_dictionary/stage7_output_dictionary.csv","data_dictionary/stage7_output_dictionary.csv","Copied source artifact","3138","5c13f8bb0df841d263668c7722b3cefab704afd82235ba9a4f4b3ed6292abfb2","copied"
-"06_完整复现与审计包/environment/environment.yml","environment/environment.yml","Copied source artifact","136","7ecd853cf7c2f35e21a9d137539673855af630ba5c28bbd5bcde8690df4fb077","copied"
-"06_完整复现与审计包/environment/requirements.lock","environment/requirements.lock","Copied source artifact","737","dc6e6f9f92f3062700449a889987e9a48d2f46f06a55469ac1000f929103501d","copied"
-"06_完整复现与审计包/figure_contracts/final2_fig1.md","figure_contracts/final2_fig1.md","Copied source artifact","597","1f26b2ede697a8ba502028bb8ca2d80588e8534aac09bc929a65c93826afa839","copied"
-"06_完整复现与审计包/figure_contracts/final2_fig2.md","figure_contracts/final2_fig2.md","Copied source artifact","450","7fd10ab0f7cb523a90c65dfed42df0a656082a0ce897a38d881d53b97385755e","copied"
-"06_完整复现与审计包/figure_contracts/final2_fig3.md","figure_contracts/final2_fig3.md","Copied source artifact","619","828a235f44c1129dc3a533f0d3555b6a5587629d7daadba7d717176dc8f12c5c","copied"
-"06_完整复现与审计包/figure_contracts/final2_fig4.md","figure_contracts/final2_fig4.md","Copied source artifact","608","7016b3e95dd2acfac5c1d1c689c4438771b0568e0b87f2f611fd1e8b5629bece","copied"
-"06_完整复现与审计包/figure_contracts/final2_fig5.md","figure_contracts/final2_fig5.md","Copied source artifact","480","a1f449c5c1db8b79363ee440bc2b70b98965e3a89ab4c8a88b45b9635ffde91f","copied"
-"06_完整复现与审计包/figure_contracts/final2_figS1.md","figure_contracts/final2_figS1.md","Copied source artifact","263","2f1398b6c0353112dbc0957e718dacbcacf840ecef88afe2d5852c414f5a6474","copied"
-"06_完整复现与审计包/figure_contracts/final2_figS2.md","figure_contracts/final2_figS2.md","Copied source artifact","272","5121a1f62b025af24ba19675baeeb9d366b89b8c125683ec15b3787bcbef6725","copied"
-"06_完整复现与审计包/figure_contracts/final2_figS3.md","figure_contracts/final2_figS3.md","Copied source artifact","333","93fc540468de4e82b7eab637e4d866ef7920bd7646b6dee5000edb296bd31d1b","copied"
-"02_主图/figure_legends.md","figure_contracts/main_figure_legends.md","Copied source artifact","4282","a09fcc2c1e25d66ba4e854895e51a90602eabe3b27b07f85a9d23537d34f28dc","copied"
-"04_补充材料/补充图/supplementary_figure_legends.md","figure_contracts/supplementary_figure_legends.md","Copied source artifact","1555","95c2b634e5ac244fc17b30928da6ec0d33ea0c801d6dbbea9f05ad08963af91c","copied"
-"02_主图/fig1_design_and_cohort_flow.pdf","figures/fig1_design_and_cohort_flow.pdf","Copied source artifact","57726","cd59e2cf98d850c41aec59eeece36f2d5e62bb37d6101e4a2c73f0b60a25e6c3","copied"
-"02_主图/fig1_design_and_cohort_flow.png","figures/fig1_design_and_cohort_flow.png","Copied source artifact","225522","2c51a1de5da448b8207d4386f209cf08da3023241e3579882d4685154413a2b9","copied"
-"02_主图/fig2_measurement_process_shift.pdf","figures/fig2_measurement_process_shift.pdf","Copied source artifact","59356","48c8909564e1e2da6f9cd776eaae0c782a86c3a654313b6920b224881ce18076","copied"
-"02_主图/fig2_measurement_process_shift.png","figures/fig2_measurement_process_shift.png","Copied source artifact","212501","82437420ac2f88c6d76677cfdb828fee56d95f801341b2d9d34977929d5d4e16","copied"
-"02_主图/fig3_internal_external_performance.pdf","figures/fig3_internal_external_performance.pdf","Copied source artifact","53536","f6e5d655e9571a0c5843d28c543aaeac52545d24eed1dd9e7a60ebe045d54633","copied"
-"02_主图/fig3_internal_external_performance.png","figures/fig3_internal_external_performance.png","Copied source artifact","266378","64e05bd0134679ae7e14035c9adca5c2df214692b04a24d68a63c4aa00808578","copied"
-"02_主图/fig4_external_calibration_and_distribution.pdf","figures/fig4_external_calibration_and_distribution.pdf","Copied source artifact","74615","b762413f5cbd90a69645cdc848f5e825ebfb7cf98acbf1004cb359437636b61f","copied"
-"02_主图/fig4_external_calibration_and_distribution.png","figures/fig4_external_calibration_and_distribution.png","Copied source artifact","198261","0f7f6441c1be7c1e9bea47f6fdbb5ffb201496db6ad897ce525908b142c24d0d","copied"
-"02_主图/fig5_phenotype_cluster_paired_robustness.pdf","figures/fig5_phenotype_cluster_paired_robustness.pdf","Copied source artifact","50968","f1a279d83f7e0184495a82d7368dbbc39fd311de1e5b722796226b5cbe622e4f","copied"
-"02_主图/fig5_phenotype_cluster_paired_robustness.png","figures/fig5_phenotype_cluster_paired_robustness.png","Copied source artifact","166889","9672f228ae36952bc03d7c0e2f8a1bfa8e1ee716b1748eaeb0aef97f60f2cd46","copied"
-"06_完整复现与审计包/final/claim_evidence_matrix.csv","final/claim_evidence_matrix.csv","Copied source artifact","1119","2960645b7775a293147874193648306c3c9fef566710076488d5569e74b675a4","copied"
-"06_完整复现与审计包/final/result_traceability.csv","final/result_traceability.csv","Copied source artifact","271206","4bd06ad8f0518fc037948aa030792a06fa2e444f0fc9bf32018aeb3dbcfe4cee","copied"
-"06_完整复现与审计包/final/source_file_registry.csv","final/source_file_registry.csv","Copied source artifact","2939","e78bcbe60c5d914256e77e8d7311c2e3ae611db4e3fe3011bacb159b32650c4e","copied"
-"06_完整复现与审计包/final/source_of_truth_metrics.csv","final/source_of_truth_metrics.csv","Copied source artifact","511373","cb0ecf444e9aba43d9ed6585a3f1b7c058be4c1e0ad5495715bcb957bdeb85fe","copied"
-"06_完整复现与审计包/model_cards/logistic_A.md","model_cards/logistic_A.md","Copied source artifact","1180","35f8a224955fd8ab5436c24602cc027338f7ff847e0f3be618c44f57025a5501","copied"
-"06_完整复现与审计包/model_cards/logistic_B.md","model_cards/logistic_B.md","Copied source artifact","1071","ec5d6069e7dae06ac54a888500e7d8e57b6c7de32a5c3ae7d173bf0d9155abcb","copied"
-"06_完整复现与审计包/model_cards/logistic_C.md","model_cards/logistic_C.md","Copied source artifact","919","411988e40fff11d49f9b5708360154f86c2adfbad2a340c44201f28c7705887e","copied"
-"06_完整复现与审计包/model_cards/paper_guided_xgboost_reconstruction.md","model_cards/paper_guided_xgboost_reconstruction.md","Copied source artifact","1192","b6ea96ffcf1e9cb49a28146fcdc0c1792811a4699ba00a1af120bdfc26a96dc1","copied"
-"06_完整复现与审计包/model_cards/README.md","model_cards/README.md","Copied source artifact","306","01e0418ad35178cfbbe4b1ed62143f80f8f506db7d184c7d04985ba262167cd9","copied"
-"06_完整复现与审计包/ontology/canonical_dictionary.json","ontology/canonical_dictionary.json","Copied source artifact","22064","927efaa4143d9b1bdfd1e81a089cf0705961ab66e7db630346b1f96a5a73b441","copied"
-"06_完整复现与审计包/ontology/core_variable_set_stage2.csv","ontology/core_variable_set_stage2.csv","Copied source artifact","5918","7788bc3f117e4f13431db777c658cb6ee90e42f72499f9a74176b800aba73588","copied"
-"06_完整复现与审计包/ontology/cross_database_coverage_matrix_stage2.csv","ontology/cross_database_coverage_matrix_stage2.csv","Copied source artifact","2237","c40a926b18920a9d47d30df15b9f49fa43b86fdfe39e72aedd4b0e108bbbdd13","copied"
-"06_完整复现与审计包/ontology/mapping_evidence_stage2.csv","ontology/mapping_evidence_stage2.csv","Copied source artifact","23192","45b8826234fe74ceef4d8dbe640e4977aa54bee8b555aa2bcb7332416571bfe1","copied"
-"06_完整复现与审计包/ontology/source_priority_rules_stage2.yaml","ontology/source_priority_rules_stage2.yaml","Copied source artifact","3003","b32315522226fdd09584c0c049c53ef8f6e4e181f32a6e43a6c1168f563d005e","copied"
-"06_完整复现与审计包/ontology/source_variable_disposition_stage2.csv","ontology/source_variable_disposition_stage2.csv","Copied source artifact","59571","1ce5a47c1855cb937dd289f0f65f6b75d23d25bf96138b369eb8f2763f1c7fcc","copied"
-"06_完整复现与审计包/ontology/time_leakage_risk_stage2.csv","ontology/time_leakage_risk_stage2.csv","Copied source artifact","443","36e94fda5476eef3edad784c084a91369dd54dc45104be74b432e58da85b1fec","copied"
-"06_完整复现与审计包/ontology/time_semantics_audit.csv","ontology/time_semantics_audit.csv","Copied source artifact","1690","015cda16c0b273dab32949a71d8f8e684ed7876750096eb1a19e322eb5d67dbb","copied"
-"06_完整复现与审计包/ontology/unit_audit.csv","ontology/unit_audit.csv","Copied source artifact","7470","4ddcaf1fe90c3cd5fd9e2716aaa9935299f55d0b22811f5dccef53b3a5dd84a7","copied"
-"06_完整复现与审计包/ontology/unit_conversion_roundtrip_stage2.csv","ontology/unit_conversion_roundtrip_stage2.csv","Copied source artifact","1861","f687a54f999f6301993da65c0443c8700489b37730b018d2bb518ef3b3d5f580","copied"
-"06_完整复现与审计包/ontology/unit_conversion_rules_stage2.yaml","ontology/unit_conversion_rules_stage2.yaml","Copied source artifact","3775","6fbcc2606d95a11f25bea2f363c3213455f08ec6a2c36e4b361453be08f69820","copied"
-"06_完整复现与审计包/ontology/unmapped_variables.csv","ontology/unmapped_variables.csv","Copied source artifact","32","c07baed845b90031b269339d73dde6c72f11c08108a14c4a04c1762e6849b065","copied"
-"06_完整复现与审计包/provenance/dataset_inventory.csv","provenance/dataset_inventory.csv","Copied source artifact","1865","803b59a89d2822ef0bce92b4de1f190d71e30ce9d72e08bd9c97771916d02f7a","copied"
-"06_完整复现与审计包/provenance/original_results_baseline.csv","provenance/original_results_baseline.csv","Copied source artifact","42547","fc7ff95eae89950d701c7ba98223ecd0a9df8e3a5278d06f91736c377e48aa7a","copied"
-"06_完整复现与审计包/provenance/provenance.json","provenance/provenance.json","Copied source artifact","1928","da2f36df0293e5bc51813ae01e467bc08074e7187ed0e3b62bcf4d200c30060b","copied"
-"06_完整复现与审计包/provenance/software_inventory.csv","provenance/software_inventory.csv","Copied source artifact","1131","186c1ee4c01167dcb37554ae29de8fb3c9cab6a2a30cb6ff4aad55e064babb65","copied"
-"generated","README.md","Generated package document or utility","2759","49de82830c6f6ac9a6f1aeb506f268c5a998bf2c5d12dd29cd418707e642f7f8","generated"
-"06_完整复现与审计包/reporting/claim_strength_audit_current.csv","reporting/claim_strength_audit_current.csv","Copied source artifact","1182","38a68192df988578d3a5f2f54b83573603c2812b9ffe841a550ed03b8ba07378","copied"
-"06_完整复现与审计包/reporting/code_availability.md","reporting/code_availability.md","Copied source artifact","1075","4732c2322df58ebd41f2132180734e852a238059c70400f823bb5833bff7d16e","copied"
-"06_完整复现与审计包/reporting/data_availability.md","reporting/data_availability.md","Copied source artifact","1607","699ffc0c6f0a0dbd72b62ad18b84710bf83ab09ac8009add7ccb255c3a587185","copied"
-"06_完整复现与审计包/reporting/fair_audit.csv","reporting/fair_audit.csv","Copied source artifact","2738","388757adf67bfaf71c21651de409d2cba88cd3c471f48e516b8713d18455b590","copied"
-"06_完整复现与审计包/reporting/limitations.md","reporting/limitations.md","Copied source artifact","2870","05ca3292d86ade159b88201dc68b24ff568ad4a092331b143d36b078cfaaf8a9","copied"
-"06_完整复现与审计包/reporting/model_availability.md","reporting/model_availability.md","Copied source artifact","1099","aabb5b3410c13bab848b22369c9ed309871a15c40e7925166adcbcfc3d6ac4c8","copied"
-"06_完整复现与审计包/reporting/probast_ai_audit.csv","reporting/probast_ai_audit.csv","Copied source artifact","11618","983311ab5ade8c56056004f793fb4bca4ab27285932278e032b21902b67a1761","copied"
-"06_完整复现与审计包/reporting/title_and_abstract_claim_audit_current.md","reporting/title_and_abstract_claim_audit_current.md","Copied source artifact","849","dd6fce67906c0558c501d25d7ac666c40863d1210496f75a8881326b8c14634a","copied"
-"06_完整复现与审计包/reporting/tripod_ai_audit.csv","reporting/tripod_ai_audit.csv","Copied source artifact","13163","6b755d3be1b15791e928857d67fa0ad8d8574c419b95f226743277e404b41f72","copied"
-"generated","RUNBOOK.md","Generated package document or utility","1111","ff4531fb0a95f5a7737f92c8532b1532adfc15a98441d6dc593c2e3da286da64","generated"
-"generated","scripts/revise_final2_figures.py","Generated self-contained public figure rebuild script derived from manifest-approved provenance script","27500","ec3cc84b1911b23e9e6853280788b11137325abce9483503c9de826ebaf70755","generated"
-"generated","scripts/run_public_snapshot.py","Generated package document or utility","1253","7ee6b7739d8637de3450962807a893ed67a872fb06f259fd1acd734e00c71050","generated"
-"05_图表源数据/fig1_design_and_cohort_flow.csv","source_data/fig1_design_and_cohort_flow.csv","Copied source artifact","1229","5974078a7f5afdad15ff691a64e55b32605160a85317fdcf67246ec3ec04450a","copied"
-"05_图表源数据/fig2_measurement_process_shift.csv","source_data/fig2_measurement_process_shift.csv","Copied source artifact","5288","d18549e09f69b9ac61593f8e37a5f8e3eebfd8e52666be6798a7d11961f8938f","copied"
-"05_图表源数据/fig2_phenotype_sensitivity.csv","source_data/fig2_phenotype_sensitivity.csv","Copied source artifact","776","880cf07e02fa75aa8d477de86bba468ab38a10e562a54306ac9b0c2031c6dfd3","copied"
-"05_图表源数据/fig3_internal_external_performance.csv","source_data/fig3_internal_external_performance.csv","Copied source artifact","12373","74b356f7bb8f835deb4ae7254e3434829b4bcce604a76f3127d1be1646c1d235","copied"
-"05_图表源数据/fig3_primary_corrected_performance.csv","source_data/fig3_primary_corrected_performance.csv","Copied source artifact","5298","470aba261bde407bc111c2078ff987e7eac22122e9f92de360b74bced6f9ed43","copied"
-"05_图表源数据/fig4_bootstrap_paired_AB.csv","source_data/fig4_bootstrap_paired_AB.csv","Copied source artifact","2524","09ca372435941a6d194c2c1806778e170abceee7306e96a3737ce8833fc85314","copied"
-"05_图表源数据/fig4_calibration_bins.csv","source_data/fig4_calibration_bins.csv","Copied source artifact","3628","2dce1d52d2a3cd68235f592442ca8abdec82bcd8b83ff20176f12f1e6709153f","copied"
-"05_图表源数据/fig4_calibration_parameters.csv","source_data/fig4_calibration_parameters.csv","Copied source artifact","4527","3d0ceb1d9e6dfd41a4bc2a224b7f60d4e9632504f6bf05ccc783efcc76df6efe","copied"
-"05_图表源数据/fig4_logistic_calibration_curves.csv","source_data/fig4_logistic_calibration_curves.csv","Copied source artifact","157687","fdfea60c5e8de26783d42333291361611a935627f51ecd6be95bcd87c2ed7a02","copied"
-"05_图表源数据/fig4_prediction_distribution_summary.csv","source_data/fig4_prediction_distribution_summary.csv","Copied source artifact","754","b77d1b7e56c5fb92759ced47ed32176a6914da6ab2e3634e2ad63a0b2c49baa7","copied"
-"05_图表源数据/fig5_decomposition_validity_audit.csv","source_data/fig5_decomposition_validity_audit.csv","Copied source artifact","1852","a5d340231b3a3aae75fc99ce89c1c773291f3cf81d35d7d0dc8047ac71ae7932","copied"
-"05_图表源数据/fig5_phenotype_cluster_paired_robustness.csv","source_data/fig5_phenotype_cluster_paired_robustness.csv","Copied source artifact","11444","bfcb726d0e67ff2baf83e2b5ff25932fe1f1356e8eae846a81e45da7909f723c","copied"
-"05_图表源数据/figS1_exploratory_models.csv","source_data/figS1_exploratory_models.csv","Copied source artifact","5519","c2f2b529a4f44429dd604e9da416d6dd09168c8b933282407bc5beba30e52b43","copied"
-"05_图表源数据/figS2_decision_curve.csv","source_data/figS2_decision_curve.csv","Copied source artifact","14558","94bd1a0f2817a9d34f2bbe9d6c1740e00ce337308728ba353f7faa0f86f35790","copied"
-"05_图表源数据/figS3_corrected_internal_external.csv","source_data/figS3_corrected_internal_external.csv","Copied source artifact","7655","42e8d8bb835fd29b556f26fbf2f6d1724205837fcb651e5acd1992f70fccf88a","copied"
-"05_图表源数据/figS3_corrected_outer_fold_performance.csv","source_data/figS3_corrected_outer_fold_performance.csv","Copied source artifact","10983","79a0877ddd322020906fde8a92ba0dc065485074f22f02eff29ad789f12a93fc","copied"
-"05_图表源数据/figS3_descriptive_outer_fold_performance.csv","source_data/figS3_descriptive_outer_fold_performance.csv","Copied source artifact","10983","79a0877ddd322020906fde8a92ba0dc065485074f22f02eff29ad789f12a93fc","copied"
-"04_补充材料/补充图/figS1_exploratory_model_metrics.pdf","supplementary/figures/figS1_exploratory_model_metrics.pdf","Copied source artifact","42228","ec4405d15ebc97921962a5eb5641e98965e61db126d1738a355d2885c2d7696c","copied"
-"04_补充材料/补充图/figS1_exploratory_model_metrics.png","supplementary/figures/figS1_exploratory_model_metrics.png","Copied source artifact","53555","9a3c6e0fa030b265bb20c19cf7c49bf8f4a9aeedea3467cb77ee90784a0585bc","copied"
-"04_补充材料/补充图/figS2_decision_curve_A_B.pdf","supplementary/figures/figS2_decision_curve_A_B.pdf","Copied source artifact","43671","ef7420c3b5f60670e0e4e17aa93c8ce27d5a4e506e4d696bf4761e86869977b0","copied"
-"04_补充材料/补充图/figS2_decision_curve_A_B.png","supplementary/figures/figS2_decision_curve_A_B.png","Copied source artifact","93746","c0b8125891e1b7d57c45b705651c73b895724a0bf7f290077e71e425f755f08e","copied"
-"04_补充材料/补充图/figS3_corrected_outer_fold_performance.pdf","supplementary/figures/figS3_corrected_outer_fold_performance.pdf","Copied source artifact","52822","bbf3e93828c6a630d870543862e286e493856251c1d09d798572ceb1bdf66352","copied"
-"04_补充材料/补充图/figS3_corrected_outer_fold_performance.png","supplementary/figures/figS3_corrected_outer_fold_performance.png","Copied source artifact","188108","c276d69452a978770b427e5e89408896d736309a56e8f5c6b970c9a70813062c","copied"
-"04_补充材料/补充表/table_s1_outer_fold_performance_and_complexity.csv","supplementary/tables/table_s1_outer_fold_performance_and_complexity.csv","Copied source artifact","32018","37a21d7483ccbe4d32283f40fe37a096a1d08c9764f4d7e7a25cc0f76bbc8002","copied"
-"04_补充材料/补充表/table_s2_inner_C_search.csv","supplementary/tables/table_s2_inner_C_search.csv","Copied source artifact","33418","cce80644e7b65c558355287e431c3611c10f25097da4f93ac4180a10b2135201","copied"
-"04_补充材料/补充表/table_s3_paired_A_vs_B_all.csv","supplementary/tables/table_s3_paired_A_vs_B_all.csv","Copied source artifact","6916","83efc0141351daff231e96bb8aa0ca1e8fe9ef32c838c3a08e7c326dae1d547c","copied"
-"04_补充材料/补充表/table_s4_corrected_internal_external_differences.csv","supplementary/tables/table_s4_corrected_internal_external_differences.csv","Copied source artifact","5298","7507cd12dfcee9a6c2d2fb942e72aa216e2f647105fa729d63318bc3f7329bb6","copied"
-"04_补充材料/补充表/table_s5_clinical_score_computability.csv","supplementary/tables/table_s5_clinical_score_computability.csv","Copied source artifact","416","7b54e28eca6504e4cfe46164908b0712ca15a71ee14489e71d89b0ed3d2d8622","copied"
-"04_补充材料/补充表/table_s6_fold_coefficient_mapping.csv","supplementary/tables/table_s6_fold_coefficient_mapping.csv","Copied source artifact","63090","cdb0ff4cd58c65532b6a7017ffa56d855b015b14c7e7dff09dc86353b7070958","copied"
-"03_主表/table1_cohort_flow_and_roles.csv","tables/table1_cohort_flow_and_roles.csv","Copied source artifact","1229","5974078a7f5afdad15ff691a64e55b32605160a85317fdcf67246ec3ec04450a","copied"
-"03_主表/table2_primary_and_corrected_internal_performance.csv","tables/table2_primary_and_corrected_internal_performance.csv","Copied source artifact","5298","470aba261bde407bc111c2078ff987e7eac22122e9f92de360b74bced6f9ed43","copied"
-"03_主表/table3_phenotype_sensitivity.csv","tables/table3_phenotype_sensitivity.csv","Copied source artifact","776","880cf07e02fa75aa8d477de86bba468ab38a10e562a54306ac9b0c2031c6dfd3","copied"
-"03_主表/table4_model_complexity.csv","tables/table4_model_complexity.csv","Copied source artifact","1433","956386ce28d336424e004472d71a74653798b034921afdebdbb13242d407de75","copied"
-"03_主表/table5_patient_cluster_and_paired_AB.csv","tables/table5_patient_cluster_and_paired_AB.csv","Copied source artifact","2524","09ca372435941a6d194c2c1806778e170abceee7306e96a3737ce8833fc85314","copied"
-"03_主表/table6_historical_validity.csv","tables/table6_historical_validity.csv","Copied source artifact","430","9507a3e11497e82ba97c4b6ee2f74cfda0f873c54385453322176deb026b5cc3","copied"
-"06_完整复现与审计包/tests/test_reanalysis_integration.py","tests/test_reanalysis_integration.py","Copied source artifact","858","ee1c224b29ac6158f08f0a9aff0542e9f8797718202a292e2a52e00012fcbb1c","copied"
-"06_完整复现与审计包/tests/test_stage7_core.py","tests/test_stage7_core.py","Copied source artifact","848","27eb9187a7b4c99f43f4ff3eb193f90c5394ac9a1832a9d51dcf12f917395e2f","copied"
-"06_完整复现与审计包/tests/test_stage7_release.py","tests/test_stage7_release.py","Copied source artifact","2948","9092015df8394492365f311b0c790c9d73de1d5186eaad047ae35bc8586dc41c","copied"
-"generated","未纳入文件说明.csv","Generated package document or utility","617","7234a14a63e3101205f028e03c396215a2941c7df7fb9674b7e7d13e84be0222","generated"
+path,bytes,sha256,role,source_kind
+.gitignore,100,75e736b3cb31619af96f4b81da90811ebc1528e18aa8bec691b8e3a6008a9626,release_documentation,documented_technical_material
+code/external_evaluation.py,36906,2613e7a837308e4f9b2ddc8fa66ae8b956cdd6a8e5a822c1e84a4ec75b49b552,code,documented_technical_material
+code/stage2_ontology_defs.py,98784,5b98fad20843b840ac200de3a73154802ae31b004ade9e4899107f58b7669c3e,code,documented_technical_material
+code/stage2_ontology_defs_extra.py,24037,3f7048c942007a992f4a78f778cba57e0b91035e328d159c4b0c986dcd090257,code,documented_technical_material
+cohort/cohort_spec.yaml,1176,a53532625e5a5a33e1bd7fbceed969902f077fbf7d5f8984667820e40b0d9455,cohort,documented_technical_material
+cohort/protocol_history/cohort_spec.yaml,6201,50c4c2c0519140444b02d6841ab385212a4c45d3efb936782c1ffab8f041832f,cohort,documented_technical_material
+cohort/protocol_history/label_version.txt,39,59fbafd877d8b76e352a21be7cf499677032487067b1b3ae62d74bd528847dad,cohort,documented_technical_material
+cohort/README.md,433,a6cc4b96d34980142df5cdc612e48fd930ef6f3007c482a49b5f468b0ffb95c8,cohort,documented_technical_material
+config/paths.example.yaml,329,334bf8be061f307788ac22755103c4fe2e3a1b0c5981da596b9aedf9d8f5e763,config,documented_technical_material
+DATA_ACCESS.md,1077,61f1db0e52f8012f89ceee1a8fc6d14100501383139e01142c39c283e4471f95,release_documentation,documented_technical_material
+data_dictionary/output_schema.csv,483,e3ae32c1377c672a7f6a73060d2a54987225e22923ffcad8139a5fd59bd83fd1,data_dictionary,documented_technical_material
+data_dictionary/README.md,731,0f55c33090987c1520e5c31d0b4a601201852eebf2e0d96480ca72edfcc492cd,data_dictionary,documented_technical_material
+environment/environment.yml,251,159412ab874a56617686c2fd501d5dd2bad01604fdef0a7e34e1013e096142da,environment,documented_technical_material
+environment/requirements.txt,103,f0cc59d9622c7775657d3513b7185ad9292c69aae0add5d8641c1b4186cbd605,environment,documented_technical_material
+environment/server_evaluation.lock,240,cd093bfd829dc2b8f8bda654c3e3179f51c36f9252a8b43f2ff6e323db0b16f5,environment,documented_technical_material
+figures/Figure_1.pdf,58686,e572eed9b741dcdad9ffaf4437f46b7a35677100a38cafb4899b1556382588e3,figures,author_submission_export
+figures/Figure_1.png,469153,3ccd3e303807eaf40c56510805d28736cc5d0fc48fa6c471c70f35e32c5f440f,figures,author_submission_export
+figures/Figure_1.tif,1009288,19a731ecce06d727a1a20694ceba55e3790bc8dc1cf026633f75ba06d8b5c7c6,figures,author_submission_export
+figures/Figure_2.pdf,62470,3fd873f408dfc6965e83620ce3ef6456cae02eebadd9415f1e74a94a47c73fa7,figures,author_submission_export
+figures/Figure_2.png,575316,3bde70d71ea19237d6b26bc681056d70fc199084d6de40eea2427aadec82ece6,figures,author_submission_export
+figures/Figure_2.tif,1191482,f76d218f439096897d84b13db0cef54a022a07452b61b62d97f07ea1c8751cea,figures,author_submission_export
+figures/Figure_3.pdf,54942,4d8aea83ed1ea34c3d827a75abcebf692117195b53146e2dc7e258d04275bf78,figures,author_submission_export
+figures/Figure_3.png,734695,0392a401c5d9471e8d50a61e60af64d7089ecdba861a6770556a8cf7ea74d44c,figures,author_submission_export
+figures/Figure_3.tif,1078504,55327ad58e77bfee22146d5f1c629d712778af7db5f6834424a687eaf9c7c690,figures,author_submission_export
+figures/Figure_4.pdf,72882,c9bf26371a45a9cd993691aaa4189723c52313eb183aab28c3961d7a19424cc4,figures,author_submission_export
+figures/Figure_4.png,507927,a31ec951e3888e8b4281f35b205b40ce66ea728c77d40b13cc4f6f0b85d64506,figures,author_submission_export
+figures/Figure_4.tif,961068,b53cfc7064bcd6e8db53f5839dfb70bababf430eea1d5959a627387f9fe5f534,figures,author_submission_export
+figures/figure_legends.md,2634,b54d5ee1491864c5ae8a242e1c045dc82229d132877ce4011bcc312ecb767d23,figures,author_submission_export
+final/release_status.json,477,484d5f57afd2793bc262c85aaed919a2c1543bf45909db7673ad75cc70eaaf05,final,documented_technical_material
+final/result_traceability.csv,9985,127b6b4d1a7ea14791437c0b62902e386f8e8977600e015694bc5961476c8c75,final,documented_technical_material
+final/source_of_truth_metrics.csv,11768,3ea1d41487073b549bff65cf3cffe33235bf06ed2b785b776e69da279637984c,final,documented_technical_material
+model_cards/logistic_A.md,1002,358998cf788fbc9493a3b5040c4832b8076d188dfc740c5e10e05b7bd8162b09,model_cards,documented_technical_material
+model_cards/logistic_B.md,1002,1cb56834132e16644bb80122e10eaeca4e9ffa6872712c351bd596a5e3ebe890,model_cards,documented_technical_material
+ontology/canonical_dictionary.json,22053,450c04c1de9279cb88d8b0642d1e6fa34c1941942c55450d2fadf9cd0653d68a,ontology,documented_technical_material
+ontology/core_variable_set_stage2.csv,5918,7788bc3f117e4f13431db777c658cb6ee90e42f72499f9a74176b800aba73588,ontology,documented_technical_material
+ontology/cross_database_coverage_matrix_stage2.csv,2237,c40a926b18920a9d47d30df15b9f49fa43b86fdfe39e72aedd4b0e108bbbdd13,ontology,documented_technical_material
+ontology/mapping_evidence_stage2.csv,23192,45b8826234fe74ceef4d8dbe640e4977aa54bee8b555aa2bcb7332416571bfe1,ontology,documented_technical_material
+ontology/source_priority_rules_stage2.yaml,3003,b32315522226fdd09584c0c049c53ef8f6e4e181f32a6e43a6c1168f563d005e,ontology,documented_technical_material
+ontology/source_variable_disposition_stage2.csv,59566,33095444bc2ed022912547227e1961b5b1f703d998299db5f23bb518ef4ca77a,ontology,documented_technical_material
+ontology/time_leakage_risk_stage2.csv,443,36e94fda5476eef3edad784c084a91369dd54dc45104be74b432e58da85b1fec,ontology,documented_technical_material
+ontology/time_semantics_audit.csv,1688,5dd12e572df636e532fa8069a2e68a097c73eb9d434317f9889da6a0695084fc,ontology,documented_technical_material
+ontology/unit_audit.csv,7469,441f0701762d04ec3e57101a817240592dc2c07addfa90f371bbd383478810e7,ontology,documented_technical_material
+ontology/unit_conversion_roundtrip_stage2.csv,1861,f687a54f999f6301993da65c0443c8700489b37730b018d2bb518ef3b3d5f580,ontology,documented_technical_material
+ontology/unit_conversion_rules_stage2.yaml,3775,6fbcc2606d95a11f25bea2f363c3213455f08ec6a2c36e4b361453be08f69820,ontology,documented_technical_material
+ontology/unmapped_variables.csv,32,c07baed845b90031b269339d73dde6c72f11c08108a14c4a04c1762e6849b065,ontology,documented_technical_material
+provenance/external_evaluation_manifest.json,3072,75be705781175873c144b2781c16689c85f160b0f74495c6a0a08733741ef846,provenance,documented_technical_material
+provenance/figure_sources.json,3741,4ac7221830f41b84a202a0e29404cfdfdd790b86ecb882b74891789285c11bcd,provenance,documented_technical_material
+provenance/table_sources.json,6098,9b7f6c5e6836aa04a16e6ce4c3c04e75b1893ae23610000489e9399f6e5e79c5,provenance,documented_technical_material
+README.md,3492,4e62eb125a23e80c2718523574f4045b967196b6e34e23567e3e9f5045c1a290,release_documentation,documented_technical_material
+reporting/checklist_notes.md,118,3908b3d1385c92c615d5f8ec4c8993c21f533160447f3eeb21ddc2fcb0e54106,reporting,author_submission_export
+reporting/research_reporting_checklist_part_1.csv,11198,a269dc6f49c2057f8c9bdaf3c17c95772b291d5ff926ac486625c5a91c58d2aa,reporting,author_submission_export
+reporting/research_reporting_checklist_part_2.csv,6086,59822f97612b8d20170a48eeebff0b59fd88ddc52a5b52b6004655f4d86ad2e7,reporting,author_submission_export
+reporting/research_reporting_checklist_part_3.csv,2745,68963867422c0437b374b7ad51523099ebc9908173f399db8de4c7286eeaabe0,reporting,author_submission_export
+reporting/research_reporting_checklist_part_4.csv,2102,c9203ce3db18dcb37c55d3d67fb130d21b11b357b8e7eec6211f242fbb75c125,reporting,author_submission_export
+RUNBOOK.md,3028,e7b844cc8b251d847ac2e569e00147eabe6516da0801db0f98101dd56a82d18b,release_documentation,documented_technical_material
+scripts/export_calibration_plot_data.py,2303,2c681d7da00cfab409f549a1e45d33f17f5b49c3dd0615bd5fad9faf237e0058,scripts,documented_technical_material
+scripts/recompute_corrected_external.py,3160,123e7c03d33dc0d292081aa753ed3a76d47444b2cea6a2e0989c096c6bd0b697,scripts,documented_technical_material
+scripts/revise_final2_figures.py,988,89a6f94156b7ac6ec72e4121828f034fa6bff10de3b6c8a431c0bdd5eee4face,scripts,documented_technical_material
+scripts/run_public_snapshot.py,3194,b822e6a19e8cdb2a5c7c9e988454f652d4b429e397a3290b546dbd67b80e9f04,scripts,documented_technical_material
+source_data/figure_1_cohort_flow.csv,1292,f718e4d86afb53e2420b09eaba3cc36b0b254cf77a9b714fc4d656fdf09f2df0,source_data,documented_technical_material
+source_data/recomputed_calibration/calibration_bins.csv,2193,0dcec30d69f1807bf9292e794bd57e6f50c1a7d320844eca96d3c79a5ecd1a2d,source_data,server_output
+source_data/recomputed_calibration/calibration_curves.csv,61150,d612ca2ca0c6d8c1ece208d674a1a7daea1fe4764d96c5b72d4e8d7dee373515,source_data,server_output
+source_data/recomputed_calibration/prediction_distribution.csv,3799,01b11751872beea568bcba1b5452791ad80568279cd1de8749551f4f31da3369,source_data,server_output
+source_data/recomputed_calibration/provenance.json,336,fe244ab77cf2438281c241ba8b5b1b9b585611daca11ac784d86d7856af2a72d,source_data,server_output
+source_data/recomputed_external/decision_curve_analysis.csv,36622,43067a03b35e384911304811a37fcf9011194a2a9d6866803600c89c9c8703e9,source_data,server_output
+source_data/recomputed_external/paired_A_vs_B.csv,2958,565f8c304edd35b183539a34631f5d5a704b96fab45adb8b1f6ffcca38ddbe7e,source_data,server_output
+source_data/recomputed_external/performance_metrics.csv,5231,694751bb175c8448b1f2a10643e38587059cd5fa654e0ed3e3e746a169ba70ea,source_data,server_output
+source_data/retained_fig2_measurement_process_shift.csv,3797,bddb329bada80b6f58880599a282d31ab9335f24e0219008158da66197368ade,source_data,documented_technical_material
+source_data/retained_figS1_exploratory_models.csv,5269,e8c966641b742cbc521214e42b8a8d6a019074563383f566c4722b2e38f32c6a,source_data,documented_technical_material
+source_data/retained_internal_diagnostics.csv,6267,529f8938d10fd34bca47147a127839388b3e05a9ee2828c9062cdb3e42860e1b,source_data,documented_technical_material
+source_data/retained_source_notes.json,479,81cce06f038dae0dfc9fd8a393186f2a507b6f991bf3c500e232cdebc358540a,source_data,documented_technical_material
+source_data/submitted/Supplemental_Table_S4_Source_Data.csv,2021,f91fa0659719f977a0ca3156b60d1926f94f16563e5e694661021cf1b89c4931,source_data,author_submission_export
+source_data/submitted/Supplemental_Table_S5_Source_Data.csv,2896,166aed29bfca30186c144ddad4d0b2f6a5124d70c271406cc9bc3ef91288b371,source_data,author_submission_export
+source_data/submitted/Supplemental_Table_S6_Source_Data.csv,1781,291334292d74cbe1af394d466ed9e99d85a3435eb09a4152c5c6b90b78a18d0a,source_data,author_submission_export
+source_data/submitted/Supplemental_Table_S8_Source_Data.csv,5971,0e8e3e0a901e4e82b60baf3dc5d3f30f8cf43b5789bfb1e680da8333d17e092d,source_data,author_submission_export
+source_data/supplemental_figure_S4_fold_performance.csv,2021,f91fa0659719f977a0ca3156b60d1926f94f16563e5e694661021cf1b89c4931,source_data,documented_technical_material
+supplementary/figures/figure_legends.md,1011,d77f8bfd09027ba61bb1c086d4a0f948e3febc481408ea994695438bd061e5f1,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S1.pdf,43292,bdc09c7b1799a461fc7a1c2b74e36624c4fec97657d6846102ad6579f51ea481,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S1.png,113739,3eb2c1cea58cbc71e2a495c52a630df9366cff5d89e3c4a9502ba2952f255f11,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S1.tif,355024,fa0fe81719e4e9ff6a30948d240b69845adc98ce4232a207f7868932d3965508,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S2.pdf,593382,56b50c1fd0490e541abfee510ee5cc4e7e433c577855b5a3ced5f7fe48031d16,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S2.png,263860,db9f65d524e6e16e255d10f38965e86a7cb6fd6f9c559fdb88befb28f9c523a2,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S2.tif,485422,5243ebbfa6f9a69cf63bdbde6a84df97f9d00e4159c91f50c8fbb2f801fbe5a1,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S3.pdf,612243,0a3a4f63b9ef7d0faf19565a29a9738f2a65d588d3aa5e94eff6bb2ceae83cfc,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S3.png,454276,13a12333e1e2c7c209fba731520d6e72a8e616d512edb5af6ca1ab36c99c278d,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S3.tif,778590,04b6c8d82f750ce432b87e027a43aaf3e3d74ece060c66a18dfe0168bb2c63a6,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S4.pdf,55148,2ac7ef59fe7cb9b8384cd86fcaa1197563d1716526a93d1df46b87dfc4ddd496,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S4.png,383723,a5957f1c8a0ced42146111a2bb3e0466b8e2f8d475c0e525191bbebf295e030a,supplementary,author_submission_export
+supplementary/figures/Supplemental_Figure_S4.tif,658008,2351a6033ba59b38d4fb406dc63b1b32acbf0f5d3f240f33aa975817e3ebd24f,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S1.csv,1292,f718e4d86afb53e2420b09eaba3cc36b0b254cf77a9b714fc4d656fdf09f2df0,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S2.csv,427,47514abd0c53967e21be362f59c7265af609c30c98826988d5f862199277072b,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S3.csv,1772,160b182524ea16196f4c930b0455d8f56d892da726f146237be86f40b3b77b8d,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S4.csv,1124,3b649d50b32b05c7d8e3652d76b8e2e950525382b977e2891292571dfbe3d063,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S5.csv,1282,cdfd20954e34e2df8107509bbb3c830057bc794c251af49b79807101704e25a8,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S6.csv,1250,fee321a009e3761b397f3d6aa9607f0ff56f0d1f89dea8981fc5f95054570a52,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S7.csv,874,d5e493ff02923bef4b107601f1e35e2740f4801f1fe98b310c3616e8be6e30e7,supplementary,author_submission_export
+supplementary/tables/supplemental_table_S8.csv,3517,112bca313ece4db9e3677655c34df0c4a3a300bf5fbb3edc63b56c25dced3885,supplementary,author_submission_export
+supplementary/tables/table_notes.md,3543,2b7426e2260b94bedc01bb6ffeb52d247bd0be99468aa1c9092d6133ddaacfb5,supplementary,author_submission_export
+tables/table_1_notes.md,1052,672e9859b3664f38acc3d018e3b0fe3f56d5ab5effe278bb87da877d03cec1c5,tables,author_submission_export
+tables/table_1_panel_A.csv,1045,414fc5e39374e9e9832101c2ba5e245e7c2caadc0afc439eaf355f3eb0ffdbdb,tables,author_submission_export
+tables/table_1_panel_B.csv,3183,429112bdab4ee30fa310577d25ea87df153c0aa01fef73b52266777db101c5ce,tables,author_submission_export
+tests/test_corrected_external.py,13892,2ada2bcb9aea99c2ee1d2576e1fd5da7c461cf9f8202c1e436d05e9012806484,tests,documented_technical_material
+tests/test_public_release.py,1067,c449a5f08f29b9119fab046aeaf24db34360a40c5a4bc61c2a1eafc1350532b2,tests,documented_technical_material

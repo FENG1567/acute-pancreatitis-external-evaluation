@@ -247,7 +247,7 @@
       300
     ],
     "time_priority": "measurement",
-    "repeat": "keep all events; feature contract in stage 3",
+    "repeat": "keep all events; feature contract",
     "eligible": true,
     "domain": "vital"
   },

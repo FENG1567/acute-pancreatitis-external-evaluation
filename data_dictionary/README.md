@@ -1,9 +1,5 @@
-# Stage-7 data dictionary
+# Public output dictionary
 
-This directory documents shareable output schemas. It does not contain a patient-level data dictionary for redistribution. Database-specific mappings remain in `ontology/variable_map.csv`, and the measurement-feature contract remains in `features/process_feature_dictionary.json`.
+The current metric registry is `final/source_of_truth_metrics.csv`; result IDs link to `final/result_traceability.csv`. `source_kind` distinguishes the external reevaluation from the internal development summaries. Blank intervals are unavailable, not zero.
 
-- `stage7_output_dictionary.csv` defines the unique metric registry, traceability registry, claim-evidence matrix, and manuscript template tokens.
-- Values used in manuscript text, tables, or figures must resolve through a registered `result_id`.
-- Blank confidence limits mean that a valid interval was not registered; they must not be displayed as zero or inferred.
-- `result_role` determines whether a result is primary, exploratory, descriptive, superseded, or invalid-for-claim.
-- Patient identifiers, source text, and row-level predictions are excluded from the public reporting dictionary.
+`calibration_in_the_large` fixes the prediction-logit coefficient at one. `calibration_intercept` and `calibration_slope` are joint logistic-recalibration parameters. `scaled_brier` uses the observed-prevalence constant-risk reference. Full-precision outputs include effective bootstrap counts. Display tables preserve author rounding and NE labels. Database variable-level mappings are under `ontology/`; no patient records are included.

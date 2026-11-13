@@ -210,7 +210,7 @@ eICU,lab,labmeasurenameinterface,mapped,
 eICU,lab,labmeasurenamesystem,mapped,
 eICU,lab,labname,mapped,
 eICU,lab,labresult,mapped,
-eICU,lab,labresultoffset,mapped,VERIFIED by sampling
+eICU,lab,labresultoffset,mapped,checked by sampling
 eICU,lab,labresultrevisedoffset,mapped,LEAK RISK: recorded not event
 eICU,lab,labresulttext,duplicate_source,duplicate_source
 eICU,lab,labtypeid,mapped,
@@ -284,7 +284,7 @@ eICU,patient,apacheadmissiondx,out_of_scope,out_of_scope
 eICU,patient,dischargeweight,out_of_scope,out_of_scope
 eICU,patient,ethnicity,out_of_scope,out_of_scope
 eICU,patient,gender,mapped,
-eICU,patient,hospitaladmitoffset,mapped,negative = pre-ICU; VERIFIED by sampling
+eICU,patient,hospitaladmitoffset,mapped,negative = pre-ICU; checked by sampling
 eICU,patient,hospitaladmitsource,out_of_scope,out_of_scope
 eICU,patient,hospitaladmittime24,mapped,
 eICU,patient,hospitaldischargelocation,out_of_scope,out_of_scope
@@ -375,7 +375,7 @@ eICU,vitalperiodic,cvp,out_of_scope,out_of_scope
 eICU,vitalperiodic,etco2,out_of_scope,out_of_scope
 eICU,vitalperiodic,heartrate,mapped,
 eICU,vitalperiodic,icp,out_of_scope,out_of_scope
-eICU,vitalperiodic,observationoffset,mapped,VERIFIED by sampling
+eICU,vitalperiodic,observationoffset,mapped,checked by sampling
 eICU,vitalperiodic,padiastolic,out_of_scope,out_of_scope
 eICU,vitalperiodic,pamean,out_of_scope,out_of_scope
 eICU,vitalperiodic,pasystolic,out_of_scope,out_of_scope
@@ -1003,7 +1003,7 @@ SICdb,cases,ICD10Main,mapped,
 SICdb,cases,ICD10MainText,mapped,
 SICdb,cases,ICUOffset,mapped,
 SICdb,cases,OffsetAfterFirstAdmission,mapped,
-SICdb,cases,OffsetOfDeath,mapped,STAGE-3 VERIFICATION REQUIRED
+SICdb,cases,OffsetOfDeath,mapped,SOURCE CONFIRMATION PENDING
 SICdb,cases,OrbisDataAvailable,out_of_scope,out_of_scope
 SICdb,cases,PatientID,mapped,
 SICdb,cases,ReferringUnit,out_of_scope,out_of_scope

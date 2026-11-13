@@ -1,0 +1,35 @@
+ID,Checklist requirement,"Report location (page, section, table or figure)",Status,Explanation
+1a,Study design term in title or abstract.,Main manuscript Abstract Methods.,Reported,The abstract identifies a retrospective multi-database prediction study.
+1b,Informative and balanced abstract.,Main manuscript Abstract.,Reported,"Objective, methods, results, calibration limitation, and conclusion are presented."
+2,Scientific background and rationale.,Main manuscript Introduction.,Reported,Clinical and methodological rationale are described.
+3,Objectives and prespecified hypotheses.,Main manuscript Abstract Objective; Introduction.,Reported,Development/external-evaluation objectives and model comparison are stated.
+4,Key design elements early in paper.,Main manuscript Study design and data sources.,Reported,Retrospective multi-database design is introduced at start of Methods.
+5,"Setting, locations, and relevant dates.",Main manuscript Study design and data sources.,Partly reported,Data sources and care setting are described; calendar ranges are not stated.
+6a,"Eligibility, selection, and follow-up methods.",Main manuscript Cohort definition; Figure 1/Table 1.,Reported,"Eligibility, first-stay, landmark, and outcome framework are reported."
+6b,Matching criteria.,Not applicable: no matched cohort design.,Not applicable,No matching was performed.
+7,Variables and diagnostic criteria.,Main manuscript Cohort definition and Predictor harmonisation.,Reported,"Outcome, phenotype, predictor window, and predictor domains are described."
+8,"Data sources, measurement, comparability.",Main manuscript Study design and data sources; Predictor harmonisation and measurement-process reconstruction; Table 1/Figure 2.,Reported,"Mapping, timing and cross-database measurement-process comparisons are reported."
+9,Efforts to address bias.,"Main manuscript Cohort definition; External evaluation and statistical analysis; Discussion, limitations paragraph.",Reported,"Model locking, first-eligible-stay selection, and study limitations are described."
+10,How study size was arrived at.,"Main manuscript Model specification and development; Table 1; Discussion, limitations paragraph.",Reported,Database-derived sample/event counts and limited-event implications are stated.
+11,Handling of quantitative variables.,Main manuscript Predictor harmonisation and Model specification.,Reported,"Time windows, summaries, imputation, scaling, and model treatment are described."
+12a,All statistical methods.,Main manuscript Model specification through External evaluation.,Reported,"Model development, evaluation, calibration, and bootstrap methods are stated."
+12b,Subgroup and interaction methods.,Not applicable: no subgroup or interaction analyses reported.,Not applicable,No such analyses were prespecified or presented.
+12c,Missing-data handling.,Main manuscript Model specification; Table 1.,Reported,Median imputation and measurement presence/availability are described.
+12d,Loss to follow-up in cohort studies.,Not applicable: conditional in-hospital outcome at a 24-h landmark.,Not applicable,No longitudinal follow-up association is estimated.
+12e,Sensitivity analyses.,"Main manuscript External evaluation and statistical analysis; Results, Sensitivity analyses.",Reported,Sensitive phenotype and diagnostic analyses are described.
+13a,Numbers at each study stage.,Main manuscript Figure 1/Table 1.,Reported,"Eligibility, landmark and death counts are shown."
+13b,Reasons for exclusion/non-participation.,Main manuscript Figure 1; Table 1.,Partly reported,Flow/accounting is provided; mutually exclusive pre-landmark exclusion reasons are reported in Supplemental Table S1.
+13c,Flow diagram.,Main manuscript Figure 1.,Reported,A cohort construction and role flow figure is included.
+14a,Participant characteristics/exposures/confounders.,Main manuscript Table 1 and Figure 2; Supplementary Table S2.,Partly reported,Representative characteristics are reported; available cohort characteristics and measurement-presence indicators used as Model B inputs are reported in Table 1.
+14b,Missing data for each variable.,Main manuscript Table 1/Figure 2.,Partly reported,"Representative availability is reported, not complete variable-level missingness."
+14c,Follow-up time summary.,Not reported in final manuscript or Supplementary material.,Not reported,No time from landmark to discharge/death summary is provided.
+15,Outcome events or measures over time.,Main manuscript Table 1; primary eICU performance.,Reported,In-hospital death counts and prevalence are reported.
+16a,Unadjusted/adjusted estimates with precision.,"Not applicable: prediction-model evaluation, not exposure-effect estimation.",Not applicable,"Predictive performance, rather than causal effects, is reported."
+16b,Category boundaries for continuous variables.,Not applicable: no main results use categorised continuous exposure estimates.,Not applicable,Continuous predictors remain in the modelling pipeline.
+16c,Relative risk translated to absolute risk.,Not applicable: no relative-risk estimates are reported.,Not applicable,Absolute predicted risks and calibration are evaluated directly.
+17,Other analyses including sensitivity analyses.,"Main manuscript Results, Sensitivity analyses; Supplementary Tables S3 and S6.",Reported,Sensitivity and exploratory diagnostic analyses are reported.
+18,Key results linked to objectives.,Main manuscript Discussion.,Reported,Key external discrimination and calibration findings are summarised.
+19,"Limitations, potential bias, imprecision.",Main manuscript Limitations.,Reported,"Event-count, phenotype, landmark, and transport limitations are discussed."
+20,Cautious overall interpretation.,Main manuscript Discussion.,Reported,Interpretation separates discrimination from calibration and avoids causal inference.
+21,Generalisability.,"Main manuscript Discussion, limitations paragraph.",Reported,Setting limits and need for larger multicentre evaluation are stated.
+22,Funding and funder role.,Main manuscript Funding.,Reported,Funding and no funder role are stated.

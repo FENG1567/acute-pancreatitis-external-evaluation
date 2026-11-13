@@ -1,0 +1,128 @@
+[
+  {
+    "path": "tables/table_1_panel_A.csv",
+    "source_document": "Table_1.docx",
+    "source_sha256": "d0f2706729af4af8a4305ebbc46097b335bf97f0e4e89d59ea61d42b03856f4e",
+    "physical_table": 1,
+    "caption": "Table 1. Model inputs, available cohort characteristics, and measurement-presence indicators in MIMIC-IV and the primary eICU cohort.",
+    "rows": 19,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "tables/table_1_panel_B.csv",
+    "source_document": "Table_1.docx",
+    "source_sha256": "d0f2706729af4af8a4305ebbc46097b335bf97f0e4e89d59ea61d42b03856f4e",
+    "physical_table": 2,
+    "caption": "Table 1. Model inputs, available cohort characteristics, and measurement-presence indicators in MIMIC-IV and the primary eICU cohort.",
+    "rows": 30,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S1.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 1,
+    "caption": "Supplemental Table S1. Cohort flow and database roles.",
+    "rows": 14,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S2.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 2,
+    "caption": "Supplemental Table S2. Representative measurement-process comparisons.",
+    "rows": 6,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S3.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 3,
+    "caption": "Supplemental Table S3. Corrected and original-mapping eICU performance estimates and secondary MIMIC-IV internal diagnostics.",
+    "rows": 11,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S4.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 4,
+    "caption": "Supplemental Table S4. MIMIC-IV outer-fold performance and model-complexity summaries.",
+    "rows": 20,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S5.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 5,
+    "caption": "Supplemental Table S5. Nested cross-validation inner-fold tuning results.",
+    "rows": 43,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S6.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 6,
+    "caption": "Supplemental Table S6. Paired model-performance contrasts across eICU cohorts and MIMIC-IV internal diagnostics.",
+    "rows": 21,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S7.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 7,
+    "caption": "Supplemental Table S7. Computability of prespecified SOFA and BISAP scores.",
+    "rows": 4,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "supplementary/tables/supplemental_table_S8.csv",
+    "source_document": "Supplementary_Material_Revised.docx",
+    "source_sha256": "876b90616679507c7e2d6d7e1620a26070eb6f13455f00ef3e6b20ac1b24b367",
+    "physical_table": 8,
+    "caption": "Supplemental Table S8. Outer-fold coefficient estimates for Models A and B in MIMIC-IV.",
+    "rows": 47,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "reporting/research_reporting_checklist_part_1.csv",
+    "source_document": "Research_Checklist_BMJ_Revised.docx",
+    "source_sha256": "27fcdf05419fe3d59240810eecc3fe677faa81db0943f963fc34245c726420cc",
+    "physical_table": 1,
+    "caption": "",
+    "rows": 53,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "reporting/research_reporting_checklist_part_2.csv",
+    "source_document": "Research_Checklist_BMJ_Revised.docx",
+    "source_sha256": "27fcdf05419fe3d59240810eecc3fe677faa81db0943f963fc34245c726420cc",
+    "physical_table": 2,
+    "caption": "",
+    "rows": 35,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "reporting/research_reporting_checklist_part_3.csv",
+    "source_document": "Research_Checklist_BMJ_Revised.docx",
+    "source_sha256": "27fcdf05419fe3d59240810eecc3fe677faa81db0943f963fc34245c726420cc",
+    "physical_table": 3,
+    "caption": "",
+    "rows": 14,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  },
+  {
+    "path": "reporting/research_reporting_checklist_part_4.csv",
+    "source_document": "Research_Checklist_BMJ_Revised.docx",
+    "source_sha256": "27fcdf05419fe3d59240810eecc3fe677faa81db0943f963fc34245c726420cc",
+    "physical_table": 4,
+    "caption": "",
+    "rows": 9,
+    "provenance_note": "author_display_table_export_not_new_statistical_analysis"
+  }
+]

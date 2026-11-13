@@ -1,0 +1,19 @@
+"Panel A. Predictor specification within [0,24 h)"
+Predictor,Unit,Model A input,Model B addition
+Age,years,Admission value,None
+Male sex,binary,Binary indicator,None
+Creatinine,mg/dL,First + maximum,Presence indicator
+Blood urea nitrogen,mg/dL,First + maximum,Presence indicator
+Lactate,mmol/L,First + maximum,Presence indicator
+Glucose,mg/dL,First + maximum,Presence indicator
+Total bilirubin,mg/dL,First + maximum,Presence indicator
+White blood cell count,K/µL,First + maximum,Presence indicator
+Platelet count,K/µL,First + minimum,Presence indicator
+Haematocrit,%,First + minimum,Presence indicator
+Heart rate,beats/min,First + maximum,Presence indicator
+Mean arterial pressure,mm Hg,First + minimum,Presence indicator
+Respiratory rate,breaths/min,First + maximum,Presence indicator
+Peripheral oxygen saturation,%,First + minimum,Presence indicator
+Temperature,°C,First + maximum,Presence indicator
+Glasgow Coma Scale total,points,First + minimum,None; declared indicator was all missing
+Urine output,mL,First + maximum,Presence indicator

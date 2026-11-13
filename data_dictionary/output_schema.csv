@@ -1,0 +1,10 @@
+field,definition
+result_id,Unique current metric row identifier
+cohort,"Primary external, sensitivity external, or secondary internal cohort"
+model,A or B
+metric,Named performance measure; CITL separate from joint calibration
+estimate,Point estimate
+patient_ci_low/high,Patient-bootstrap percentile 95% limits
+cluster_ci_low/high,Hospital-cluster percentile 95% limits
+source_kind,Server recomputation or retained prior analysis
+n/events,Cohort patients and outcome events

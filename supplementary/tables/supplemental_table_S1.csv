@@ -1,0 +1,14 @@
+Database,Role,Eligible / landmark / deaths,Evidence use,Interpretation limit
+MIMIC-IV,Development,434 / 347 / 31,Nested cross-validation; secondary pooled OOF diagnostic,31 deaths in the landmark cohort
+MIMIC-IV,Pre-landmark exclusion,6,deaths before 24 h,Mutually exclusive reason
+MIMIC-IV,Pre-landmark exclusion,2,alive hospital discharges before 24 h,Mutually exclusive reason
+MIMIC-IV,Pre-landmark exclusion,79,ICU-only discharges before 24 h,Mutually exclusive reason
+eICU,Primary external cohort,470 / 359 / 21,Frozen-model evaluation with corrected sex coding,Diagnosis-priority phenotype
+eICU,Pre-landmark exclusion,1,death before 24 h,Mutually exclusive reason
+eICU,Pre-landmark exclusion,12,alive hospital discharges before 24 h,Mutually exclusive reason
+eICU,Pre-landmark exclusion,98,ICU-only discharges before 24 h,Mutually exclusive reason
+eICU,Broad cohort,1264 / 1007 / 87,Cohort accounting,Broad AP phenotype
+eICU,Sensitive cohort,1385 / 1106 / 96,Sensitivity analysis,Any-AP phenotype
+NWICU,Measurement and score computability,225 / 181 / NE,Measurement and score computability,Outcome verification unavailable
+SICdb,Exploratory,97 / 79 / 17,Exploratory analysis,17 deaths
+HiRID,General-ICU process reference,33905 / NE / NE,Measurement-process reference,General ICU cohort

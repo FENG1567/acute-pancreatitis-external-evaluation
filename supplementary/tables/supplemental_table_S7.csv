@@ -1,0 +1,4 @@
+Database,Score,Limiting components or evidence,Reason exact calculation was unavailable,Reporting consequence
+MIMIC-IV,SOFA,"Vasopressor use, ventilation and urine output","A validated extraction restricted to [0,24 h) was unavailable for these treatment and output components.",No exact time-compatible SOFA score was reported.
+MIMIC-IV,BISAP,"BUN, GCS, age, SIRS and pleural effusion",Component missingness could not be treated as absence; lack of a pleural-effusion mention was not accepted as negative evidence.,No exact BISAP score or complete-case comparison was reported.
+eICU,SOFA/BISAP,"GCS, PaO2/FiO2, respiratory support and pleural effusion","Source tables contained some time-indexed components, but support status, units, timing and negative pleural-effusion evidence could not be harmonised completely.",No exact cross-database score comparison was reported.

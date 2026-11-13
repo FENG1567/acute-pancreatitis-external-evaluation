@@ -1,0 +1,8 @@
+# Exact packages used for the 12 November 2026 server reevaluation.
+numpy==2.5.1
+pandas==2.3.3
+scikit-learn==1.9.0
+scipy==1.18.0
+joblib==1.5.3
+pyarrow==25.0.0
+# Pillow is needed for local publication previews, not for numerical evaluation.

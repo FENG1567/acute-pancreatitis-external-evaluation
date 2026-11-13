@@ -1,0 +1,21 @@
+Cohort,Metric,DifferenceA minus B,95% CI
+Primary eICU,AUROC,0.0080,-0.0096 to 0.0293
+Primary eICU,AUPRC,-0.0031,-0.0376 to 0.0259
+Primary eICU,Brier score,0.0029,-0.0022 to 0.0079
+Primary eICU,Log loss,0.0065,-0.0109 to 0.0230
+Primary eICU,Calibration-in-the-large,-0.2530,-0.3780 to -0.1316
+Primary eICU,Joint calibration intercept,-0.1009,-0.2047 to -0.0150
+Primary eICU,Joint calibration slope,0.0125,-0.0312 to 0.0521
+Sensitivity eICU,AUROC,-0.0033,-0.0150 to 0.0098
+Sensitivity eICU,AUPRC,-0.0110,-0.0234 to -4.2697e-6
+Sensitivity eICU,Brier score,0.0020,-0.0003 to 0.0043
+Sensitivity eICU,Log loss,0.0015,-0.0087 to 0.0123
+Sensitivity eICU,Calibration-in-the-large,-0.1748,-0.2340 to -0.1148
+Sensitivity eICU,Joint calibration intercept,-0.0739,-0.1096 to -0.0418
+Sensitivity eICU,Joint calibration slope,0.0058,-0.0070 to 0.0201
+MIMIC-IV internal diagnostic,AUROC,0.0009,-0.0050 to 0.0076
+MIMIC-IV internal diagnostic,AUPRC,0.0048,-0.0138 to 0.0233
+MIMIC-IV internal diagnostic,Brier score,2.0887e-5,-0.0013 to 0.0013
+MIMIC-IV internal diagnostic,Log loss,0.0018,-0.0024 to 0.0065
+MIMIC-IV internal diagnostic,Joint calibration intercept,-0.0144,-0.0650 to 0.0292
+MIMIC-IV internal diagnostic,Joint calibration slope,-0.0038,-0.0255 to 0.0162

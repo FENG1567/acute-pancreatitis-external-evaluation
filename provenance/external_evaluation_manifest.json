@@ -1,0 +1,73 @@
+{
+  "analysis_version": "corrected-eicu-external-1.0",
+  "assertions": {
+    "model_refit": false,
+    "only_corrected_feature": "sex_male",
+    "primary_baseline_predictions_match_lock_at_absolute_tolerance": 1e-15,
+    "primary_events": 21,
+    "primary_n": 359,
+    "sensitive_events": 96,
+    "sensitive_n": 1106
+  },
+  "bootstrap": {
+    "hospital_resample_rule": "sample hospitals with replacement; append every row for every selected cluster, retaining repeated clusters",
+    "primary_hospital_seed": 20261911,
+    "primary_patient_seed": 20260911,
+    "replicates": 2000,
+    "sensitive_hospital_seed": 20262011,
+    "sensitive_patient_seed": 20261011
+  },
+  "code_sha256": {
+    "external_evaluation.py": "0e59a0b0baafe992b447886695b8bbebcf06b55981ae170f99027348197f28b0",
+    "recompute_corrected_external.py": "1219e663db0a12dc98f4bdb2fc0f701108ef6d133cc1aba391dbd9c5530606f2"
+  },
+  "frozen_model_sha256": {
+    "model_A": "dcad29590d644f0ffa11df8c8149d8b133d29cd429a2ebc0b51e77c7c8e82750",
+    "model_B": "7138a646a0391c3d393a99d50aeb7cb7bab7257c15498b77ffaeea94db8c942b"
+  },
+  "inputs_sha256": {
+    "features": "64d1c3c0ae6886dab874c850e4d4185af2b407e2132145f8153aead80ffdd530",
+    "model_A": "dcad29590d644f0ffa11df8c8149d8b133d29cd429a2ebc0b51e77c7c8e82750",
+    "model_B": "7138a646a0391c3d393a99d50aeb7cb7bab7257c15498b77ffaeea94db8c942b",
+    "patient_link": "e679764a6ec833fb0dedf8b933f6c5871f1fe720096777a8702dbb9b5ef576db",
+    "primary_lock": "95317b4abb2f5ae33411284077fa4bdb460ccedc92146464cc8c94a4d3cd2f6e"
+  },
+  "metric_definitions": {
+    "calibration_in_the_large": "logistic intercept with logit(prediction) as offset and slope fixed at 1",
+    "calibration_intercept_and_slope": "joint unpenalized logistic calibration regression with free intercept and slope",
+    "log_loss_probability_clipping": "[1e-9, 1 - 1e-9]",
+    "scaled_brier": "1 - Brier / [prevalence * (1 - prevalence)]"
+  },
+  "outputs_sha256": {
+    "controlled/eicu_primary_locked_359.parquet": {
+      "bytes": 23309,
+      "sha256": "f17f142e4b2249dc308677a20b784beced86286d75b5faa93dc1c4d42842506d"
+    },
+    "controlled/eicu_sensitive_corrected_1106.parquet": {
+      "bytes": 46529,
+      "sha256": "282fc05bd4153cd6c56b179ecbc1303bc280250fe5f1d042e4a55a3747a15c28"
+    },
+    "metrics/decision_curve_analysis.csv": {
+      "bytes": 36622,
+      "sha256": "43067a03b35e384911304811a37fcf9011194a2a9d6866803600c89c9c8703e9"
+    },
+    "metrics/paired_A_vs_B.csv": {
+      "bytes": 2958,
+      "sha256": "565f8c304edd35b183539a34631f5d5a704b96fab45adb8b1f6ffcca38ddbe7e"
+    },
+    "metrics/performance_metrics.csv": {
+      "bytes": 5231,
+      "sha256": "694751bb175c8448b1f2a10643e38587059cd5fa654e0ed3e3e746a169ba70ea"
+    }
+  },
+  "publication_control": "controlled/ contains patient-keyed locks and must not be published; metrics/ contains aggregate outputs",
+  "schema_version": "1.0",
+  "software_versions": {
+    "joblib": "1.5.3",
+    "numpy": "2.5.1",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scikit-learn": "1.9.0"
+  },
+  "status": "PASS"
+}

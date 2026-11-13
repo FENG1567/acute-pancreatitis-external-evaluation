@@ -1,0 +1,6 @@
+{
+  "retained_fig2_measurement_process_shift.csv": "Descriptive measurement-process aggregates; MIMIC-IV respiratory rate is 1.083/hour.",
+  "retained_figS1_exploratory_models.csv": "Exploratory model sources for Supplemental Figure S1; not primary A/B evidence.",
+  "figure_1_cohort_flow.csv": "Aggregate cohort-flow display export for Supplemental Table S1.",
+  "supplemental_figure_S4_fold_performance.csv": "Full-precision MIMIC fold results from model development."
+}

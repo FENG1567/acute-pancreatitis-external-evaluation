@@ -1,7 +1,0 @@
-check,result,note
-event times within 0-24h,construction-enforced,"all events filtered to [0,1440) minutes"
-no post-24h values,PASS,events beyond window excluded at extraction
-no storetime/order time,PASS,only charttime/offset (confirmed) used as event time
-no outcome in feature computation,PASS,outcome columns not read by feature builder
-no imputer fitted,PASS,stage 4 fits no imputer/scaler/selector
-MIMIC/eICU preprocessing isolation,PASS,no cross-db fitting in stage 4

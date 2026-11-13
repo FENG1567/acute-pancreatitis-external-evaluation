@@ -4,7 +4,7 @@ eICU,patient,hospitaladmitoffset,event,icu_admit,minutes,200859,-1054551.0,-303.
 eICU,lab,labresultoffset,event,icu_admit,minutes,600000,-73277.0,2682.0,133954.0,0.1862,negative = before ICU admission,OK,negative fraction = pre-ICU results (documented semantics)
 eICU,vitalPeriodic,observationoffset,event,icu_admit,minutes,300000,-175.0,2472.0,71798.0,0.0002,negative = before ICU admission,OK,
 SICdb,cases,ICUOffset,event,icu_admit,minutes,27350,0.0,6540.0,2889360.0,0.0,negative = before ICU admission,OK,
-SICdb,cases,OffsetOfDeath,event,icu_admit,minutes,5088,60.0,3749280.0,30747900.0,0.0,negative = before ICU admission,OK,candidate death offset; STAGE-3 VERIFICATION REQUIRED
+SICdb,cases,OffsetOfDeath,event,icu_admit,minutes,5088,60.0,3749280.0,30747900.0,0.0,negative = before ICU admission,OK,candidate death offset; SOURCE CONFIRMATION PENDING
 SICdb,data_float_m,Offset,event,icu_admit,minutes,600000,0.0,187320.0,921540.0,0.0,negative = before ICU admission,OK,
 SICdb,laboratory,Offset,event,icu_admit,minutes,400000,-1377780.0,234780.0,6478440.0,0.023,negative = before ICU admission,OK,
 HiRID,observation_tables,datetime(derived offset),event,icu_admit,minutes,400001,-59.0,2583.7375,21075.0,0.0001,negative = before ICU admission,OK,"v1.1.1 raw_stage ships datetime (no observationoffset column); offset = datetime - general_table.admissiontime (shifted calendar, delta valid)"

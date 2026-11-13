@@ -1,0 +1,6 @@
+Variable,MIMIC-IV presence; median rate/h,eICU presence; median rate/h,Interpretation
+Heart rate,99.7%; 1.083,97.2%; 11.792,Descriptive recording contrast
+Respiratory rate,99.7%; 1.083,90.8%; 11.625,Descriptive recording contrast
+Lactate,71.2%; 0.083,44.0%; 0.042,Descriptive recording contrast
+Bilirubin,89.0%; 0.083,76.6%; 0.042,Descriptive recording contrast
+Temperature,99.4%; 0.292,NE; NE,eICU process feature unavailable

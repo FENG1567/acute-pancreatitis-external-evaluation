@@ -1,0 +1,20 @@
+Metric,Model AFold 0,Model AFold 1,Model AFold 2,Model BFold 0,Model BFold 1,Model BFold 2
+Training patients,231,231,232,231,231,232
+Training deaths,21,20,21,21,20,21
+Validation patients,116,116,115,116,116,115
+Validation deaths,10,11,10,10,11,10
+AUROC,0.9368,0.8234,0.9114,0.9349,0.8277,0.9095
+AUPRC,0.6691,0.3983,0.4704,0.6583,0.4043,0.4842
+Brier score,0.0482,0.0909,0.0712,0.0501,0.0904,0.0698
+Log loss,0.1693,0.2979,0.2974,0.1722,0.2954,0.2916
+Joint calibration intercept,0.9641,-0.8417,-1.4715,0.7889,-0.8328,-1.4389
+Joint calibration slope,1.5869,0.5066,0.3788,1.5190,0.5125,0.3872
+Selected C,0.1000,0.1000,0.1000,0.1000,0.1000,0.1000
+Selected mean inner-fold log loss,0.2174,0.1982,0.1935,0.2140,0.1969,0.1910
+Input features,32,32,32,47,47,47
+Transformed features,32,32,32,46,46,46
+Optimisation iterations,11,11,11,11,12,12
+Model complexity,15.1798,14.2871,14.3735,17.0011,15.5199,15.8716
+Coefficient L2 norm,1.0187,1.2158,1.2260,1.0335,1.2147,1.2349
+Maximum absolute coefficient,0.3813,0.5851,0.5124,0.3758,0.5800,0.5127
+Approximate ridge effective degrees of freedom,15.1798,14.2871,14.3735,17.0011,15.5199,15.8716

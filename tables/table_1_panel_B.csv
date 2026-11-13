@@ -1,0 +1,30 @@
+Panel B. Available cohort characteristics and Model B presence indicators
+Characteristic,MIMIC-IV (n=347),Primary eICU (n=359),Absolute SMD
+Age (years),54.22 (17.66); n=347/347,53.15 (16.78); n=359/359,0.062032
+Male (%),218/347 (62.8%); n=347/347,217/359 (60.4%); n=359/359,0.048928
+In-hospital death (%),31/347 (8.9%); n=347/347,21/359 (5.8%); n=359/359,0.118085
+"Heart rate first eligible measurement in [0,24h) (bpm)",107.50 (91.00–121.00); n=346/347,102.00 (88.00–118.00); n=349/359,0.207505
+"Mean arterial pressure first eligible measurement in [0,24h) (mmHg)",91.50 (78.25–106.00); n=346/347,90.50 (78.00–105.00); n=350/359,0.015705
+"Respiratory rate first eligible measurement in [0,24h) (bpm)",21.00 (18.00–26.00); n=346/347,21.00 (17.00–26.00); n=326/359,0.080510
+"Creatinine first eligible measurement in [0,24h) (mg/dL)",0.90 (0.60–1.50); n=345/347,0.96 (0.70–1.53); n=349/359,0.084689
+"BUN first eligible measurement in [0,24h) (mg/dL)",16.50 (10.00–29.25); n=344/347,16.00 (9.00–29.00); n=348/359,0.035156
+"Lactate first eligible measurement in [0,24h) (mmol/L)",1.60 (1.10–2.60); n=247/347,1.80 (1.00–3.20); n=157/359,0.088115
+"WBC first eligible measurement in [0,24h) (K/uL)",12.70 (9.10–17.85); n=343/347,11.50 (8.20–15.73); n=330/359,0.150599
+"Total bilirubin first eligible measurement in [0,24h) (mg/dL)",0.90 (0.60–2.10); n=309/347,1.00 (0.60–2.30); n=275/359,0.066568
+"Glucose first eligible measurement in [0,24h) (mg/dL)",134.00 (105.00–178.00); n=345/347,138.50 (103.00–195.25); n=348/359,0.198246
+"Platelet count first eligible measurement in [0,24h) (K/uL)",203.00 (140.00–283.50); n=343/347,182.00 (127.00–245.00); n=321/359,0.214887
+"Bilirubin present in [0,24h) (%)",309/347 (89.0%); n=347/347,275/359 (76.6%); n=359/359,0.334615
+"Bun present in [0,24h) (%)",345/347 (99.4%); n=347/347,351/359 (97.8%); n=359/359,0.140841
+"Creatinine present in [0,24h) (%)",345/347 (99.4%); n=347/347,349/359 (97.2%); n=359/359,0.172480
+"GCS total presence indicator in [0,24 h) (%)",NE; indicator all missing,NE; indicator all missing,NE
+"Glucose present in [0,24h) (%)",345/347 (99.4%); n=347/347,348/359 (96.9%); n=359/359,0.186902
+"Heart Rate present in [0,24h) (%)",346/347 (99.7%); n=347/347,349/359 (97.2%); n=359/359,0.204067
+"Hematocrit present in [0,24h) (%)",345/347 (99.4%); n=347/347,330/359 (91.9%); n=359/359,0.375116
+"Lactate present in [0,24h) (%)",247/347 (71.2%); n=347/347,158/359 (44.0%); n=359/359,0.571820
+"Map present in [0,24h) (%)",346/347 (99.7%); n=347/347,351/359 (97.8%); n=359/359,0.174728
+"Platelet present in [0,24h) (%)",343/347 (98.8%); n=347/347,325/359 (90.5%); n=359/359,0.377444
+"Respiratory Rate present in [0,24h) (%)",346/347 (99.7%); n=347/347,326/359 (90.8%); n=359/359,0.428529
+"Spo2 present in [0,24h) (%)",346/347 (99.7%); n=347/347,346/359 (96.4%); n=359/359,0.242523
+"Temperature presence indicator in [0,24 h) (%)",345/347 (99.4%); n=347/347,NE; process feature unavailable,NE
+"Wbc present in [0,24h) (%)",343/347 (98.8%); n=347/347,330/359 (91.9%); n=359/359,0.334649
+"Urine output presence indicator positive in [0,24 h) (%)",0/347 (0.0%); n=347/347,0/359 (0.0%); n=359/359,NE

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "release_date": "2026-11-12",
+  "primary_n": 359,
+  "primary_events": 21,
+  "sensitive_n": 1106,
+  "sensitive_events": 96,
+  "model_refit": false,
+  "corrected_feature": "sex_male",
+  "analysis_environment": "authorized_analysis_server",
+  "submitted_absolute_metrics_and_intervals_match": true,
+  "submitted_paired_metrics_and_intervals_match": true,
+  "upstream_raw_extraction_rerun": false,
+  "internal_model_development_rerun": false
+}

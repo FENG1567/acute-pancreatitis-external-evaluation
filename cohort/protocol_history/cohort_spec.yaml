@@ -1,0 +1,101 @@
+# =====================================================================
+# Cohort Specification
+# Project: Hospital-Specific Measurement Processes and External Degradation
+#          of Acute Pancreatitis Risk Models
+# Frozen before any event counts, mortality rates, model performance or
+# sample-size outputs.
+# =====================================================================
+
+study_id: AP-MEASUREMENT-DEGRADATION
+version: "1.0"
+frozen_utc: "2026-08-08T00:00:00Z"
+random_seed: 20260808
+
+population:
+  icu_patients: true
+  adult_age_threshold_years: 18
+  age_source: "MIMIC-IV patients.anchor_age (official docs: age at admission, capped at 91; 91 means >=91)"
+  age_sentinel_handling: "anchor_age > 89 is stored as 91 per MIMIC-IV documentation; value 91 kept as-is (>=91); ages <18 excluded; missing age excluded"
+  first_eligible_icu_stay_only: true
+  first_eligible_rule: "the earliest icustay (by intime) whose hadm_id carries an AP diagnosis; a patient may have non-AP ICU stays before their AP stay; those are ignored (not counted as AP stays)"
+
+keys:
+  patient_id: "MIMIC-IV patients.subject_id"
+  hospital_admission_id: "MIMIC-IV admissions.hadm_id"
+  icu_stay_id: "MIMIC-IV icustays.stay_id"
+  uniqueness: "subject_id unique per patient; hadm_id unique per admission; stay_id unique per ICU stay; one patient can have many hadm_id and stay_id"
+
+ap_diagnosis:
+  source_table: "MIMIC-IV diagnoses_icd (join d_icd_diagnoses for long_title)"
+  code_field: "diagnoses_icd.icd_code"
+  version_field: "diagnoses_icd.icd_version (9 or 10)"
+  text_field: "d_icd_diagnoses.long_title (official ICD dictionary)"
+  mapping_confidence_required: "confirmed"
+  diagnosis_position_field: "diagnoses_icd.seq_num (1 = primary diagnosis)"
+
+ap_definitions:
+  sensitive:
+    criteria:
+      - "ICD-10 code K85* (all K85 are acute pancreatitis by ICD-10 definition)"
+      - "or ICD-9 code 577.0* (acute pancreatitis)"
+      - "or dictionary/text-confirmed acute pancreatitis (long_title matches 'acute pancreatitis', or 'pancreatitis' WITHOUT chronic modifier)"
+    note: "plain 'pancreatitis' without acute/chronic distinction is NOT sufficient"
+  primary:
+    criteria:
+      - "sensitive definition met"
+      - "and diagnosis position satisfied: AP code has seq_num == 1 (primary diagnosis)"
+    note: "no guessing of diagnosis position; if seq_num cannot confirm primary status, case is NOT primary"
+  strict:
+    criteria:
+      - "primary definition met"
+      - "and AP recorded within frozen time window: [icu_admit_time - 24h, icu_admit_time + 24h]"
+    time_restriction_executable: false
+    time_restriction_reason: "MIMIC-IV diagnoses_icd has NO diagnosis timestamp (no chartdate/time in the diagnosis table); an admission-level proxy (AP coded on the admission containing the ICU stay) is guaranteed by construction but cannot establish the ±24h window; therefore strict = primary + flag time_restriction_not_executable; DO NOT fabricate diagnosis times"
+
+chronic_pancreatitis:
+  chronic_codes: ["ICD-10 K86*", "ICD-9 577.1"]
+  chronic_text: "long_title contains 'chronic pancreatitis'"
+  rule: "chronic-only pancreatitis is NOT included in AP cohort"
+  acute_on_chronic: "acute code AND chronic code on the same admission => counted separately as acute_on_chronic; never silently mixed into plain AP"
+
+biliary_subgroup:
+  biliary_codes: ["ICD-10 K85.1"]
+  text_rules: ["long_title contains 'biliary pancreatitis'", "long_title contains 'gallstone pancreatitis'"]
+  note: "ICD-9 577.0 has no biliary granularity; MIMIC long_titles for 577.0 are generic; biliary flags record exact code/text/source/evidence level; NOT all AP cases are biliary"
+
+timeline:
+  time_zero: "icu_admit_time (icustays.intime)"
+  feature_window: "0h <= event_time - icu_admit_time < 24h (half-open)"
+  landmark: "icu_admit_time + 24h"
+  key_times: ["hospital_admit_time (admissions.admittime)", "icu_admit_time", "diagnosis_time (n/a in MIMIC)", "measurement_time (labevents.charttime / chartevents.charttime; EVENT semantics only)", "prediction_time_zero", "landmark_time", "icu_discharge_time (icustays.outtime)", "hospital_discharge_time (admissions.dischtime)", "death_time (admissions.deathtime)"]
+  measurement_time_rule: "only charttime (specimen collection / bedside measurement) is measurement time; storetime (recorded) and order times are NEVER used as measurement time (time-leakage check)"
+
+landmark_accounting:
+  death_before_24h: "deathtime < landmark_time"
+  icu_discharge_before_24h: "outtime < landmark_time"
+  hospital_discharge_before_24h: "dischtime < landmark_time"
+  landmark_reached: "none of the above; patient observable at landmark"
+  feature_window_truncated: "icu_discharge_time < landmark_time (measurement opportunity truncated)"
+  rule: "cases dying or discharged before 24h are NOT silently deleted; they are recorded with their reason and shown separately in flow_counts"
+
+primary_outcome:
+  name: "in-hospital mortality"
+  definition: "admissions.hospital_expire_flag == 1"
+  cross_checks: ["admissions.deathtime not null", "discharge disposition consistency (discharge_location / derived discharge status)", "ICU death only auxiliary, NEVER a substitute"]
+  missing_death_rule: "missing death field is NOT coded as alive; conflicts resolved by official dictionary and chronology"
+
+secondary_outcomes:
+  - "ICU mortality (deathtime within [intime, outtime]) — derived, auxiliary"
+  - "post-landmark organ support escalation (ventilation/vasopressors/CRRT start after landmark) — derived later"
+  - "ICU LOS / hospital LOS — derived"
+
+exclusions:
+  - "age < 18 or age missing"
+  - "no ICU stay (no icustays row for the admission)"
+  - "no AP diagnosis under sensitive definition"
+  - "chronic-only pancreatitis (K86*/577.1 without acute code)"
+  - "repeat ICU stays after the first eligible AP stay (first stay kept)"
+  - "unresolvable timeline (e.g., dischtime < admittime, deathtime < admittime)"
+
+amendment_workflow:
+  rule: "any spec change: save old version; write cohort_spec_amendment; record reason; repeat all cohort checks; mark the change as a protocol amendment"

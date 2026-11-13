@@ -1,5 +1,0 @@
-definition,total_n,landmark_n,events,status,interpretation_limit,result_ids
-sensitive_any_AP,1385,1106,96,post_audit_sensitivity,post-audit sensitivity; does not replace primary locked evaluation,R8_PHENOTYPE_SENSITIVE_ANY_AP
-broad_database_specific_primary,1264,1007,87,post_audit_sensitivity,Stage-3B database-specific rule: AP plus any Primary diagnosis or admissionDx AP,R8_PHENOTYPE_BROAD_DATABASE_SPECIFIC_PRIMARY
-aligned_AP_diagnosis_priority_only,470,359,21,primary_locked_external,primary locked external rule used for Stage 6,R8_PHENOTYPE_ALIGNED_AP_DIAGNOSIS_PRIORITY_ONLY
-strict_time_window_phenotype,NE,NE,NE,NE/not executable,eICU diagnosis event time is unavailable; strict is not equal to primary and is not estimated,R8_PHENOTYPE_STRICT_TIME_WINDOW_PHENOTYPE
